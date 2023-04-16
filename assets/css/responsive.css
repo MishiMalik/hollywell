@@ -115,4 +115,14 @@
             max-height: 180px;
             width: auto;
         }
+        
+}
+@media only screen and (max-width:500px){
+  .footer-logo-text{
+    text-align: center;
+    font-size: 30px;
+  }
+  .footer-logo{
+    height: 200px;
+  }
 }
