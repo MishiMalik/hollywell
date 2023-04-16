@@ -6,7 +6,16 @@
 // });
 // ----------------------------------------------------------AOS
 AOS.init();
-// ========================================================================
+// ========================================================================dropdown
+// $(document).ready(function(){
+//     $('.dropdown-submenu a.test').on("click", function(e){
+//       $(this).next('ul').toggle();
+//       e.stopPropagation();
+//       e.preventDefault();
+//     });
+//   });
+
+//   ==========================================
 function format(item, state) {
     if (!item.id) {
         return item.text;
