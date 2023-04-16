@@ -7,13 +7,21 @@
 // ----------------------------------------------------------AOS
 AOS.init();
 // ========================================================================dropdown
-// $(document).ready(function(){
-//     $('.dropdown-submenu a.test').on("click", function(e){
-//       $(this).next('ul').toggle();
-//       e.stopPropagation();
-//       e.preventDefault();
-//     });
-//   });
+$(function () {
+    $(document).click(function (event) {
+        var navbar = $(".collapse");
+        if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                $("button.navbar-toggler").click();
+            }
+        }
+    });
+
+});
+
+
 
 //   ==========================================
 function format(item, state) {
@@ -90,7 +98,7 @@ $('.partners').owlCarousel({
         1000: {
             items: 4,
             nav: false,
-           
+
         }
     }
 })
