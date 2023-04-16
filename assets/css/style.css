@@ -186,7 +186,7 @@ color: var(--yellow) !important;
     object-position: center;
     position: absolute;
     animation: slide 25s infinite;
-    opacity: 1;
+    opacity: 0;
     background-color: #DCEFF4;
     display: flex;
     justify-content: center;
@@ -329,6 +329,7 @@ color: var(--yellow) !important;
     object-position: center;
     cursor: pointer;
     position: relative;
+    transition: all .5s;
 }
 
 .category-card img{
@@ -336,6 +337,7 @@ color: var(--yellow) !important;
     width: auto;
     object-fit: cover;
     object-position: center;
+    transition: all .5s;
 }
 .category-card-content{
 position: absolute;
@@ -349,6 +351,9 @@ display: flex;
 flex-direction: column;
 justify-content: flex-end;
 color: white !important;
+}
+.category-card:hover{
+    transform: scale(1.1);
 }
 
 /* ======================================================================slider2 */
@@ -378,7 +383,7 @@ color: white !important;
     object-position: center;
     position: absolute;
     animation: slide 25s infinite;
-    opacity: 1;
+    opacity: 0;
     background-color: #DCEFF4;
     display: flex;
     justify-content: center;
