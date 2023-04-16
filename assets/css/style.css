@@ -329,7 +329,7 @@ color: var(--yellow) !important;
     object-position: center;
     cursor: pointer;
     position: relative;
-    transition: all .5s;
+    transition: all 1s;
 }
 
 .category-card img{
