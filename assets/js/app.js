@@ -20,7 +20,16 @@ $(function () {
     });
 
 });
-
+$(window).scroll(function(event){
+    // var navbar = $(".collapse");
+    // if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
+    //     var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+        if (_opened === true ) {
+            $("button.navbar-toggler").click();
+        }
+    // }
+})
 
 
 //   ==========================================

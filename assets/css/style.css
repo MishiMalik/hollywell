@@ -123,7 +123,9 @@ color: var(--yellow) !important;
 .nav-item {
     position: relative;
 }
-
+.nav-item:hover{
+    border-bottom: 3px solid var(--orange);
+}
 /* .nav-item::after {
     content: ' ';
     height: 3px;
@@ -149,6 +151,7 @@ color: var(--yellow) !important;
 
 .active-nav .nav-link {
     color: var(--orange) !important;
+    border-bottom: 3px solid var(--orange);
 }
 
 .navbar-toggler {
