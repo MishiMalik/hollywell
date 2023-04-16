@@ -63,10 +63,17 @@
         color: white;
         text-align: justify;
       }
+      
+.slide {
+  width: 100%;
+  height: 300px;
+
+}
       .slide img{
         object-fit: contain !important;
         object-position: right;
-        height: 470px;
+        height: 100%;
+        width: 100%;
       }
       .slide > div {
         width: 100%;
