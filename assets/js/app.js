@@ -20,17 +20,36 @@ $(function () {
     });
 
 });
-$(window).scroll(function(event){
-    // var navbar = $(".collapse");
-    // if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
-    //     var clickover = $(event.target);
+// $(window).scroll(function(){
+//     // var navbar = $(".collapse");
+//     // if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
+//     //     var clickover = $(event.target);
+//         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+//         if (_opened === true ) {
+//             $("button.navbar-toggler").click();
+//         }
+//     // }
+// })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  // scrollFunction()
+  var currentScrollPos = window.pageYOffset ;
+
+    if (currentScrollPos < prevScrollpos) {
         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
         if (_opened === true ) {
             $("button.navbar-toggler").click();
         }
-    // }
-})
+    } else if(currentScrollPos > prevScrollpos + 25){
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+        if (_opened === true ) {
+            $("button.navbar-toggler").click();
+        }
 
+    }
+    prevScrollpos = currentScrollPos;
+  }
 
 //   ==========================================
 function format(item, state) {
