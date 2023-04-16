@@ -42,7 +42,7 @@ window.onscroll = function() {
     //         $("button.navbar-toggler").click();
     //     }
     // } else
-     if(currentScrollPos > prevScrollpos + 25){
+     if(currentScrollPos > prevScrollpos + 45){
         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
         if (_opened === true ) {
             $("button.navbar-toggler").click();
