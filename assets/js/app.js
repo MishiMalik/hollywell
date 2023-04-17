@@ -1,12 +1,7 @@
-// $("#country_selector").countrySelect({
-//     defaultCountry: "my",
-//     onlyCountries: ['my', 'sg', 'tw'],
-//     responsiveDropdown: true,
-//     // preferredCountries: ['ca', 'gb', 'us']
-// });
-// ----------------------------------------------------------AOS
+// ========================================================================AOS
 AOS.init();
-// ========================================================================dropdown
+
+// ========================================================================navbar close on scroll and click
 $(function () {
     $(document).click(function (event) {
         var navbar = $(".collapse");
@@ -20,28 +15,11 @@ $(function () {
     });
 
 });
-// $(window).scroll(function(){
-//     // var navbar = $(".collapse");
-//     // if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
-//     //     var clickover = $(event.target);
-//         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
-//         if (_opened === true ) {
-//             $("button.navbar-toggler").click();
-//         }
-//     // }
-// })
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   // scrollFunction()
   var currentScrollPos = window.pageYOffset ;
-
-    // if (currentScrollPos < prevScrollpos) {
-    //     var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
-    //     if (_opened === true ) {
-    //         $("button.navbar-toggler").click();
-    //     }
-    // } else
      if(currentScrollPos > prevScrollpos + 45){
         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
         if (_opened === true ) {
@@ -52,7 +30,8 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
   }
 
-//   ==========================================
+
+//   ================================================================================Flags dropdown select
 function format(item, state) {
     if (!item.id) {
         return item.text;
@@ -84,7 +63,9 @@ $(document).ready(function () {
 
 });
 
-//   =================================carousel
+
+
+//   ===================================================================================================carousel
 $('.testimonials').owlCarousel({
     loop: true,
     margin: 10,

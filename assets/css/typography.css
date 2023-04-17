@@ -62,6 +62,9 @@
 .f-40{
     font-size: 40px;
 }
+.f-64{
+    font-size: 64px;
+}
 
 
 
@@ -131,6 +134,12 @@
 .bg-grey{
     background-color:#F8F8FA ;
 }
+.ellipsis-1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .ellipsis-2{
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -175,6 +184,10 @@
     .f-24{
         font-size: 22px;
     }
+    .f-64{
+        font-size: 44px;
+    }
+    
 }
 @media only screen and (max-width:500px){
     .f-40{
@@ -182,5 +195,8 @@
     }
     .f-24{
         font-size: 22px;
+    }
+    .f-64{
+        font-size: 40px;
     }
 }
