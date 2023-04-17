@@ -149,7 +149,7 @@ color: var(--yellow) !important;
     opacity: 1;
 } */
 
-.active-nav .nav-link {
+.active-nav  {
     color: var(--orange) !important;
     border-bottom: 3px solid var(--orange);
 }

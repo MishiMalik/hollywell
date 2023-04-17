@@ -1,7 +1,7 @@
 // ======================================================================================pagination.js
 $(document).ready(function() {
     var itemsPerPage = 8;
-    var productCards = $('.mall-product');
+    var productCards = $('.product-card"');
     console.log(productCards);
     
     // Initialize pagination.js
