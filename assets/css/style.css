@@ -123,7 +123,7 @@ color: var(--yellow) !important;
 .nav-item {
     position: relative;
 }
-.nav-item:hover{
+.nav-link:hover{
     border-bottom: 3px solid var(--orange);
 }
 /* .nav-item::after {
@@ -149,7 +149,7 @@ color: var(--yellow) !important;
     opacity: 1;
 } */
 
-.active-nav  {
+.active-nav {
     color: var(--orange) !important;
     border-bottom: 3px solid var(--orange);
 }
@@ -649,7 +649,7 @@ product catalog
 
 .mall-product {
     width: 24.25%;
-    background-color: white;
+    /* background-color: white; */
     /* position: relative !important;
     top: unset !important;
     left: unset !important; */
@@ -755,7 +755,14 @@ product catalog
 }
   
 
-
+.product-dec{
+    font-size: 18px;
+    font-weight: 400 !important;
+}
+.product-heading{
+    font-size: 18px;
+    font-weight: 600;
+}
 
 
 
