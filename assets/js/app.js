@@ -112,6 +112,29 @@ $('.partners').owlCarousel({
         }
     }
 })
+
+$('.related-products').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 2,
+            nav: false
+        },
+        600: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: false,
+        }
+    }
+})
 // ==============================================================inc/dec buttons
 const plus = document.querySelector(".plus"),
 minus = document.querySelector(".minus"),
