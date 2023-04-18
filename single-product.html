@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Family Jost -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- rating -->
+    <link rel="stylesheet" href="assets/css/star-rating.css">
+    <link href="assets/krajee-fas/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/countrySelect.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css">
+    <title>Holly Well</title>
+</head>
+
+<body>
+
+    <!-- ==============================================Topbar -->
+    <div class="top-row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="d-lg-none d-flex">
+                        <button class="btn-main" type="submit">Sign Up</button>
+                    </div>
+                    <div class="d-lg-flex d-none align-items-center">
+                        <div class="d-flex align-items-center me-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center ms-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="">
+
+                        <select class="form-control" id="countries">
+                            <option value="MY" data-capital="Kuala Lumpur">MY</option>
+                            <option value="TW" data-capital="Taipei">TW</option>
+                            <option value="SG" data-capital="Singapore">SG</option>
+                        </select>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white position-sticky top-0 navbar-single">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo2.jpg" alt="" class="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active-nav" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Product Catalog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Accessries</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Clothes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    Shoes &raquo;
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Black</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">White</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">Brown &raquo; </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Light Brown</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Dark Brown</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Red</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Grey</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Furniture</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item "> -->
+                    <!-- <div class="dropdown dropdown2 nav-link">
+                                    <button class="dropdown-toggle nav-link " type="button" id="dropdownMenuButton"
+                                        data-mdb-toggle="dropdown" aria-expanded="false">
+                                        Product Catalog
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Clothes</a></li>
+                                        <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                        <li><a class="dropdown-item" href="#">Glasse</a></li>
+                                        <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                        <li><a class="dropdown-item" href="#">Glasse</a></li>
+                                    </ul>
+                                </div> -->
+                    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                      <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                            data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Dropdown link
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li>
+                                              <a class="dropdown-item" href="#">Action</a>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                            </li>
+                                            <li>
+                                              <a class="dropdown-item" href="#">
+                                                Submenu &raquo;
+                                              </a>
+                                              <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                  <a class="dropdown-item" href="#">Submenu item 1</a>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">Submenu item 2</a>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                                  <ul class="dropdown-menu dropdown-submenu">
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li>
+                                                      <a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                  </ul>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">Submenu item 4</a>
+                                                </li>
+                                                <li>
+                                                  <a class="dropdown-item" href="#">Submenu item 5</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </nav> -->
+                    <!-- <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle nav-link " type="button"
+                                        data-toggle="dropdown">Tutorials
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">HTML</a></li>
+                                        <li><a tabindex="-1" href="#">CSS</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a class="test " tabindex="-1" href="#">New dropdown > <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                                <li class="dropdown-submenu">
+                                                    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">3rd level dropdown</a></li>
+                                                        <li><a href="#">3rd level dropdown</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                    <!-- </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-lg-flex d-none">
+                <button class="btn-main " type="submit">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <main class=" mt-lg-5 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xlg-6 col-lg-6 col-md-12  slider-col ">
+                    <div class="carousel product-slider-lg">
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro11.webp" alt="">
+                                    </div>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro12.webp" alt="" class="carousel-product-img">
+                                    </div>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro13.webp" alt="">
+                                    </div>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="assets/images/t-pro11.webp" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-2"><img src="assets/images/t-pro12.webp" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-3"><img src="assets/images/t-pro13.webp" alt=""></label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="col-xlg-6 col-lg-6 col-md-12 d-flex flex-column justify-content-between mt-lg-0 mt-4">
+                    <div>
+                        <h1 class="f-24 w-600 heading ">Nike Kwazai Mesh Sneakers For Men Kwazai Mesh Sneakers For Men
+                        </h1>
+                        <div class="details mt-4">
+                            <div class="mb-2 d-flex align-items-start">
+                                <div class="tag-label">SKU</div>
+                                <div class="tag-text">MOX09684</div>
+                            </div>
+                            <div class="mb-2 d-flex align-items-start">
+                                <div class="tag-label">Category</div>
+                                <div class="tag-text">Chair</div>
+                            </div>
+                            <div class="mb-2 d-flex align-items-start">
+                                <div class="tag-label">Weight</div>
+                                <div class="tag-text">1kg</div>
+                            </div>
+                            <div class="mb-2 d-flex align-items-start">
+                                <div class="tag-label">Size</div>
+                                <div class="tag-text">large</div>
+                            </div>
+                            <div class="mb-2 d-flex align-items-start">
+                                <div class="tag-label">Tags</div>
+                                <div class="tag-text">
+                                    Chair, Home decor, Minimalist</div>
+                            </div>
+                        </div>
+                        <span class="d-flex mt-4">
+                            <span class="new-amount2 ms-1 d-flex">
+                                <span class="">$</span><span class="price">100.00</span>
+                            </span>
+                            <span class="cross-amount2"><del>$599.00</del></span>
+                        </span>
+                        <!-- <div class="d-flex align-items-cneter flex-wrap my-3">
+                                       <div class="category-tag">
+                                           category 1
+                                       </div>
+                                       <div class="category-tag">
+                                           category 2
+                                       </div>
+                                       <div class="category-tag">
+                                           category 3
+                                       </div>
+                                       <div class="category-tag">
+                                           category 4
+                                       </div>
+                                    </div> -->
+                        <div class="wrapper mt-4">
+                            <div class="minus"><i class="bi bi-dash-circle f-24 text-white"></i></div>
+                            <span class="num">01</span>
+                            <span class="plus"><i class="bi bi-plus-circle f-24 text-white"></i></span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="cart-btn no-decoration w-400">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <!-- Tab links -->
+                    <div class="tab product-tab">
+                        <button class="tablinks " id="defaultOpen"
+                            onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews</button>
+                        <button class="tablinks" onclick="openCity(event, 'feedback')">Give Feedback</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="Description" class="tabcontent tabcontent-product ">
+                        <p class="text text-justify f-16 w-400 mb-0 ">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                            libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                            dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                            natus vero, error expedita iste!
+                        </p>
+                        <p class="text text-justify f-16 w-400">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                            libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                            dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                            natus vero, error expedita iste!
+                        </p>
+                        <p class="text text-justify f-16 w-400">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                            libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                            dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                            natus vero, error expedita iste!
+                        </p>
+                    </div>
+
+                    <div id="Reviews" class="tabcontent tabcontent-product">
+                        <div class="review-card mb-3 review-card-full">
+                            <i class="bi bi-quote mark"></i>
+                            <div class="d-flex align-items-center">
+
+                                <div class="review-img me-3">
+                                    <img src="assets/images/pdc-1.png" alt="" class="">
+                                </div>
+
+                                <div>
+                                    <h1 class="f-20 w-500 heading mb-0">Kata West</h1>
+                                    <div class="d-flex">
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 text-orange"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 f-16 w-500 text ellipsis-4 text-justify mb-0 pb-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                                voluptas quaerat nobis laudantium asperiores debitis vel ea mollitia atque.
+                            </p>
+                        </div>
+
+                        <div class="review-card mb-3 review-card-full">
+                            <i class="bi bi-quote mark"></i>
+                            <div class="d-flex align-items-center">
+
+                                <div class="review-img me-3">
+                                    <img src="assets/images/pdc-6.png" alt="" class="">
+                                </div>
+
+                                <div>
+                                    <h1 class="f-20 w-500 heading mb-0">Kata West</h1>
+                                    <div class="d-flex">
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 text-orange"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 f-16 w-500 text ellipsis-4 text-justify mb-0 pb-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                                voluptas quaerat nobis laudantium asperiores debitis vel ea mollitia atque.
+                            </p>
+                        </div>
+
+
+                        <div class="review-card mb-3 review-card-full">
+                            <i class="bi bi-quote mark"></i>
+                            <div class="d-flex align-items-center">
+
+                                <div class="review-img me-3">
+                                    <img src="assets/images/pdc-4.png" alt="" class="">
+                                </div>
+
+                                <div>
+                                    <h1 class="f-20 w-500 heading mb-0">Kata West</h1>
+                                    <div class="d-flex">
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 text-orange"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 f-16 w-500 text ellipsis-4 text-justify mb-0 pb-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                                voluptas quaerat nobis laudantium asperiores debitis vel ea mollitia atque.
+                            </p>
+                        </div>
+
+
+                        <div class="review-card mb-3 review-card-full">
+                            <i class="bi bi-quote mark"></i>
+                            <div class="d-flex align-items-center">
+
+                                <div class="review-img me-3">
+                                    <img src="assets/images/pdc-3.png" alt="" class="">
+                                </div>
+
+                                <div>
+                                    <h1 class="f-20 w-500 heading mb-0">Kata West</h1>
+                                    <div class="d-flex">
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 text-orange"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 f-16 w-500 text ellipsis-4 text-justify mb-0 pb-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                                voluptas quaerat nobis laudantium asperiores debitis vel ea mollitia atque.
+                            </p>
+                        </div>
+
+
+                        <div class="review-card mb-3 review-card-full">
+                            <i class="bi bi-quote mark"></i>
+                            <div class="d-flex align-items-center">
+
+                                <div class="review-img me-3">
+                                    <img src="assets/images/pdc-2.png" alt="" class="">
+                                </div>
+
+                                <div>
+                                    <h1 class="f-20 w-500 heading mb-0">Kata West</h1>
+                                    <div class="d-flex">
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 me-1 text-orange"></i>
+                                        <i class="bi bi-star-fill f-16 text-orange"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 f-16 w-500 text ellipsis-4 text-justify mb-0 pb-0">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente
+                                voluptas quaerat nobis laudantium asperiores debitis vel ea mollitia atque.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="feedback" class="tabcontent tabcontent-product">
+                        <h1 class="f-24 w-500 heading">Give Your Feedback</h1>
+                        <p class="f-16 text w-400">Your Email will not be published!</p>
+
+                        <form action="">
+                            <div class="mb-2">
+                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Rating</label>
+                                <input id="kartik" class="rating" data-stars="5" data-step="0.1" title="" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Email </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Type Feedback
+                                </label>
+                                <textarea name="" id="" rows="10" class="form-textarea"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn-main-yellow no-decoration f-18 px-4 py-2">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class=" footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  mb-lg-0 mb-4 d-flex justify-content-center flex-column align-items-center">
+                    <h1 class="f-24 w-600 footer-logo-text font-garmond text-yellow">HOLLY WELL</h1>
+                    <a href="index.html" class="no-decoration"><img src="assets/images/logo.png" alt=""
+                            class="img-fluid footer-logo mx-auto" style="height: 150px;"></a>
+                </div>
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Categories</h1>
+                    <div class="mt-3  text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover ">
+                            Shoes
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Cosmatics
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Colothes
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Accessries
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration">
+                            Furniture
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Links</h1>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Customer Support
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            My Account
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            FAQ
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Terms & Conditions
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Locations</h1>
+                    <div class="mt-3">
+                        <p class="f-16 w-400 text-white no-decoration mb-0 pb-0 text-lg-start text-center">
+                            Jln. Cempaka Wangi No 22, Jakarta - Indonesia
+                        </p>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <div
+                            class="d-flex align-items-center justify-content-lg-start justify-content-center me-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 ">
+                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                            <div class="social me-2">
+                                <a href="" class=""><i class="bi bi-facebook"></i></a>
+                            </div>
+                            <div class="social me-2">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="social me-2">
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12 mb-2">
+                    <hr class="text-white ">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <p class="f-14 text-white w-400 mb-0 pb-0 text-lg-start text-center mt-lg-0 mt-4">Copyright © 2023
+                        HOLLY WELL.</p>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 d-flex justify-content-lg-end justify-content-center">
+                    <img src="assets/images/payment.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/isotope/packery-mode.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <!-- rating -->
+    <script src="assets/krajee-fas/theme.js" type="text/javascript"></script>
+    <script src="assets/krajee-svg/theme.js" type="text/javascript"></script>
+    <script src="assets/js/rating.js" type="text/javascript"></script>
+    <!-- pagination CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
+    <!-- Other JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/sorting.js"></script>
+    <!-- Pagination JS -->
+    <script src="assets/js/pagination.js"></script>
+
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
