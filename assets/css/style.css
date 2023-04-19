@@ -3,7 +3,7 @@
 /* font-family: 'Jost', sans-serif; */
 body {
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif !important;
 
 }
 
@@ -825,6 +825,7 @@ product catalog
 .page-link:focus {
     box-shadow: none !important;
 }
+
 /* ==================================carousel multiple images */
 .carousel {
     display: block;
@@ -893,8 +894,8 @@ product catalog
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #F8F8FA ;
-   
+    background-color: #F8F8FA;
+
 }
 
 .carousel__slide div:before {
@@ -912,7 +913,7 @@ product catalog
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 10px !important; 
+    padding: 10px !important;
 }
 
 @media only screen and (max-width: 7479px) {
@@ -957,7 +958,7 @@ product catalog
     margin-top: 7px;
 }
 
-.carousel__thumbnails li {
+.carousel__thumbnails div {
     height: 70px !important;
     width: 70px !important;
     margin: 0 4px 0 0;
@@ -971,21 +972,22 @@ product catalog
     object-fit: cover;
 }
 
-.carousel__thumbnails li:last-child {
+.carousel__thumbnails div:last-child {
     margin: 0 0px 0 0;
 }
 
-.carousel__thumbnails img {
+.carousel__thumbnails div img {
     display: block;
     width: 70px;
     height: 70px;
     object-fit: contain !important;
     object-position: center;
     overflow: hidden;
-    background-color:#F8F8FA ;
+    background-color: #F8F8FA;
 }
+
 /* =========================================================details of product */
-.category-tag{
+.category-tag {
     padding: 1px 7px;
     box-shadow: 0 0 3px #ccc;
     border-radius: 2px;
@@ -996,29 +998,33 @@ product catalog
     margin: 3.5px 4px;
     background-color: #f5f6f760;
 }
+
 /* ==========================================================inc/dec buttons */
-.wrapper{
+.wrapper {
     display: flex;
     align-items: center;
     background: #F1F3F4;
     width: fit-content;
     padding: 5px 15px;
-  }
-  .wrapper span{
+}
+
+.wrapper span {
     text-align: center;
-   
+
     cursor: pointer;
     user-select: none;
-    
-  }
-  .wrapper span.num{
+
+}
+
+.wrapper span.num {
     font-size: 30px;
     pointer-events: none;
     margin: 0px 20px;
     width: 70px;
     font-weight: 600;
-  }
-  .minus{
+}
+
+.minus {
     height: 30px;
     width: 30px;
     background-color: var(--yellow);
@@ -1031,8 +1037,9 @@ product catalog
     line-height: 0px;
     padding: 0px;
     cursor: pointer;
-  }
-  .plus{
+}
+
+.plus {
     height: 30px;
     width: 30px;
     background-color: var(--yellow);
@@ -1045,17 +1052,20 @@ product catalog
     line-height: 0px;
     padding: 0px;
     cursor: pointer;
-  }
- .tag-label{
+}
+
+.tag-label {
     min-width: 108px;
     font-size: 16px;
     font-weight: 600;
- }
- .tag-text{
+}
+
+.tag-text {
     font-size: 16px;
     font-weight: 400;
- }
- .cross-amount2 {
+}
+
+.cross-amount2 {
     color: var(--grey);
     font-size: 24px;
     font-weight: 400;
@@ -1066,7 +1076,8 @@ product catalog
     font-size: 30px;
     font-weight: 600;
 }
-.cart-btn{
+
+.cart-btn {
     font-size: 24px;
     color: white !important;
     border: none;
@@ -1074,78 +1085,132 @@ product catalog
     font-weight: 500;
     background-color: var(--yellow);
     border-radius: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
-.cart-btn:hover{
+
+.cart-btn:hover {
     background-color: var(--orange);
 }
 
 /* ===============================================================single product tabs */
-  .product-tab{
+.product-tab {
     overflow: hidden;
     background-color: #F1F3F4 !important;
     border-radius: 3px;
     border: 1px solid #F1F3F4;
-  }
-  /* Style the buttons that are used to open the tab content */
-  .product-tab button {
-    background-color: inherit;
+}
+
+/* Style the buttons that are used to open the tab content */
+.product-tab button {
+    background-color: transparent;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 16px !important;
     transition: 0.3s;
-    font-size: 16px;
-    font-weight: 500;
-    
-  }
-  
-  /* Change background color of buttons on hover */
-  .product-tab button:hover {
+    /* font-size: 14px !important;
+    font-weight: 500 !important;
+    color: black; */
+    color: #313D4D;
+    font-weight: 600;
+    margin-bottom:  0px !important;
+}
+
+/* Change background color of buttons on hover */
+.product-tab button:hover {
     background-color: var(--yellow);
     color: white;
-  }
-  
-  /* Create an active/current tablink class */
-  .product-tab button.active {
+}
+
+/* Create an active/current tablink class */
+.product-tab button.active-tab {
     background-color: var(--yellow);
     color: white;
-  }
-  
-  /* Style the tab content */
-  .tabcontent-product{
+}
+
+/* Style the tab content */
+.tabcontent-product {
     display: none;
     padding: 14px 12px;
     border: 1px solid #F1F3F4;
     border-top: none;
-  }
-  .review-card-full{
+}
+
+.review-card-full {
     background-color: #F1F3F4 !important;
     min-height: 100px !important;
     height: auto !important;
-  }
-  .form-textarea{
+}
+
+.form-textarea {
     width: 100%;
     border: 1px solid #ced4da !important;
     border-radius: 3px;
-  }
-  .form-control{
+}
+
+.form-control {
     border: 1px solid #ced4da !important;
-  }
-  .form-control:focus{
+}
+
+.form-control:focus {
     box-shadow: none;
-  }
-  .form-textarea:focus{
+}
+
+.form-textarea:focus {
     box-shadow: none;
     outline: none;
-  }
-  .rating-md .caption{
-    display: none !important;
-  }
-.krajee-icon-clear{
+}
+
+.rating-md .caption {
     display: none !important;
 }
-.rating-container{
+
+.krajee-icon-clear {
+    display: none !important;
+}
+
+.rating-container {
     margin-top: -16px;
+}
+
+
+
+
+/* =============================================================slider slick */
+.js .slider-single>div:nth-child(1n+2) {
+    display: none
+}
+
+.js .slider-single.slick-initialized>div:nth-child(1n+2) {
+    display: block
+}
+
+.slider-nav .slick-slide {
+    cursor: pointer;
+}
+
+.slick-slide.is-active h3 {
+    color: #c00;
+    background-color: #fff
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--blue);
+}
+
+.slick-next {
+    right: 6px;
+}
+
+.slick-prev {
+    left: 6px;
+    z-index: 7;
+}
+.slider-nav img{
+    height: 70px;
+    width: 100%;
+    object-fit: contain;
+    
 }

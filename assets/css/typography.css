@@ -94,7 +94,7 @@
     font-family: 'Nunito', sans-serif;
 }
 .font-garmond{
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', serif !important;
 }
 .heading{
     color: var(--heading);

@@ -21,6 +21,10 @@
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- <link rel="stylesheet" href="assets/css/foundation.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -35,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css">
+
     <title>Holly Well</title>
 </head>
 
@@ -95,8 +100,8 @@
                         <a class="nav-link active-nav" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
-                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
                             Product Catalog
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -249,7 +254,58 @@
     <main class=" mt-lg-5 mt-3">
         <div class="container">
             <div class="row">
-                <div class="col-xlg-6 col-lg-6 col-md-12  slider-col ">
+                <div class="col-lg-6 ">
+                    <div class="slider slider-single">
+                        <div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro11.webp" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro12.webp" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro13.webp" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="assets/images/t-pro14.webp" alt="">
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" slider slider-nav mt-3">
+                        <div><img src="assets/images/t-pro11.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro12.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro13.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro14.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro11.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro12.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro13.webp" alt=""></div>
+                        <div><img src="assets/images/t-pro14.webp" alt=""></div>
+                    </div>
+                </div>
+                <!-- <div class="col-xlg-6 col-lg-6 col-md-12  slider-col ">
                     <div class="carousel product-slider-lg">
                         <input type="radio" name="slides" checked="checked" id="slide-1">
                         <input type="radio" name="slides" id="slide-2">
@@ -293,7 +349,7 @@
 
 
 
-                </div>
+                </div> -->
                 <div class="col-xlg-6 col-lg-6 col-md-12 d-flex flex-column justify-content-between mt-lg-0 mt-4">
                     <div>
                         <h1 class="f-24 w-600 heading ">Nike Kwazai Mesh Sneakers For Men Kwazai Mesh Sneakers For Men
@@ -556,170 +612,164 @@
             </div>
         </div>
         <section class="mt-5 bg-grey ">
-                <div class="py-5">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3 class="f-16 text-orange w-600 font-garmond text-center"><i>Related Products</i></h3>
-                                <h1 class="f-40 w-600 heading text-center">Some More New Arrivals</h1>
-                            </div>
-                            <div class="col-lg-12 mt-4">
-                                <div class="owl-carousel related-products">
-                                    <div>
-                                        <div class="products-card bg-white">
-                                            <div class="product-card-img">
-                                                <img src="assets/images/t-pro3.webp" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="product-card-text">
-                                                <p
-                                                    class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
-                                                    E. Brown Shoes</p>
-                                                <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
-                                                    dolor sit amet
-                                                    consectetur
-                                                    adipisicing.</p>
-                                                <span class="d-flex">
-                                                    <del class="text-black">
-                                                        <span class="cross-amount"><bdi><span
-                                                                    class="">$</span>599.00</bdi></span>
-                                                    </del>
-                                                    <span class="new-amount ms-1 d-flex">
-                                                        <span class="">$</span><span class="price">100.00</span>
-                                                    </span>
-    
+            <div class="py-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="f-16 text-orange w-600 font-garmond text-center"><i>Related Products</i></h3>
+                            <h1 class="f-40 w-600 heading text-center">Some More New Arrivals</h1>
+                        </div>
+                        <div class="col-lg-12 mt-4">
+                            <div class="owl-carousel related-products">
+                                <div>
+                                    <div class="products-card bg-white">
+                                        <div class="product-card-img">
+                                            <img src="assets/images/t-pro3.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="product-card-text">
+                                            <p class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
+                                                E. Brown Shoes</p>
+                                            <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
+                                                dolor sit amet
+                                                consectetur
+                                                adipisicing.</p>
+                                            <span class="d-flex">
+                                                <del class="text-black">
+                                                    <span class="cross-amount"><bdi><span
+                                                                class="">$</span>599.00</bdi></span>
+                                                </del>
+                                                <span class="new-amount ms-1 d-flex">
+                                                    <span class="">$</span><span class="price">100.00</span>
                                                 </span>
-                                                <div class="mt-4">
-                                                    <button class="btn-main no-decoration w-400">Add to
-                                                        Cart</button>
-                                                </div>
+
+                                            </span>
+                                            <div class="mt-4">
+                                                <button class="btn-main no-decoration w-400">Add to
+                                                    Cart</button>
                                             </div>
                                         </div>
                                     </div>
-    
-    
-                                    <div>
-                                        <div class="products-card bg-white">
-                                            <div class="product-card-img">
-                                                <img src="assets/images/t-pro4.webp" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="product-card-text">
-                                                <p
-                                                    class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
-                                                    E. Brown Shoes</p>
-                                                <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
-                                                    dolor sit amet
-                                                    consectetur
-                                                    adipisicing.</p>
-                                                <span class="d-flex">
-                                                    <del class="text-black">
-                                                        <span class="cross-amount"><bdi><span
-                                                                    class="">$</span>599.00</bdi></span>
-                                                    </del>
-                                                    <span class="new-amount ms-1 d-flex">
-                                                        <span class="">$</span><span class="price">100.00</span>
-                                                    </span>
-    
+                                </div>
+
+
+                                <div>
+                                    <div class="products-card bg-white">
+                                        <div class="product-card-img">
+                                            <img src="assets/images/t-pro4.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="product-card-text">
+                                            <p class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
+                                                E. Brown Shoes</p>
+                                            <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
+                                                dolor sit amet
+                                                consectetur
+                                                adipisicing.</p>
+                                            <span class="d-flex">
+                                                <del class="text-black">
+                                                    <span class="cross-amount"><bdi><span
+                                                                class="">$</span>599.00</bdi></span>
+                                                </del>
+                                                <span class="new-amount ms-1 d-flex">
+                                                    <span class="">$</span><span class="price">100.00</span>
                                                 </span>
-                                                <div class="mt-4">
-                                                    <button class="btn-main no-decoration w-400">Add to
-                                                        Cart</button>
-                                                </div>
+
+                                            </span>
+                                            <div class="mt-4">
+                                                <button class="btn-main no-decoration w-400">Add to
+                                                    Cart</button>
                                             </div>
                                         </div>
                                     </div>
-    
-    
-                                    <div>
-                                        <div class="products-card bg-white">
-                                            <div class="product-card-img">
-                                                <img src="assets/images/t-pro5.webp" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="product-card-text">
-                                                <p
-                                                    class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
-                                                    E. Brown Shoes</p>
-                                                <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
-                                                    dolor sit amet
-                                                    consectetur
-                                                    adipisicing.</p>
-                                                <span class="d-flex">
-                                                    <del class="text-black">
-                                                        <span class="cross-amount"><bdi><span
-                                                                    class="">$</span>599.00</bdi></span>
-                                                    </del>
-                                                    <span class="new-amount ms-1 d-flex">
-                                                        <span class="">$</span><span class="price">100.00</span>
-                                                    </span>
-    
+                                </div>
+
+
+                                <div>
+                                    <div class="products-card bg-white">
+                                        <div class="product-card-img">
+                                            <img src="assets/images/t-pro5.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="product-card-text">
+                                            <p class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
+                                                E. Brown Shoes</p>
+                                            <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
+                                                dolor sit amet
+                                                consectetur
+                                                adipisicing.</p>
+                                            <span class="d-flex">
+                                                <del class="text-black">
+                                                    <span class="cross-amount"><bdi><span
+                                                                class="">$</span>599.00</bdi></span>
+                                                </del>
+                                                <span class="new-amount ms-1 d-flex">
+                                                    <span class="">$</span><span class="price">100.00</span>
                                                 </span>
-                                                <div class="mt-4">
-                                                    <button class="btn-main no-decoration w-400">Add to
-                                                        Cart</button>
-                                                </div>
+
+                                            </span>
+                                            <div class="mt-4">
+                                                <button class="btn-main no-decoration w-400">Add to
+                                                    Cart</button>
                                             </div>
                                         </div>
                                     </div>
-    
-    
-                                    <div>
-                                        <div class="products-card bg-white">
-                                            <div class="product-card-img">
-                                                <img src="assets/images/t-pro1.webp" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="product-card-text">
-                                                <p
-                                                    class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
-                                                    E. Brown Shoes</p>
-                                                <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
-                                                    dolor sit amet
-                                                    consectetur
-                                                    adipisicing.</p>
-                                                <span class="d-flex">
-                                                    <del class="text-black">
-                                                        <span class="cross-amount"><bdi><span
-                                                                    class="">$</span>599.00</bdi></span>
-                                                    </del>
-                                                    <span class="new-amount ms-1 d-flex">
-                                                        <span class="">$</span><span class="price">100.00</span>
-                                                    </span>
-    
+                                </div>
+
+
+                                <div>
+                                    <div class="products-card bg-white">
+                                        <div class="product-card-img">
+                                            <img src="assets/images/t-pro1.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="product-card-text">
+                                            <p class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
+                                                E. Brown Shoes</p>
+                                            <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
+                                                dolor sit amet
+                                                consectetur
+                                                adipisicing.</p>
+                                            <span class="d-flex">
+                                                <del class="text-black">
+                                                    <span class="cross-amount"><bdi><span
+                                                                class="">$</span>599.00</bdi></span>
+                                                </del>
+                                                <span class="new-amount ms-1 d-flex">
+                                                    <span class="">$</span><span class="price">100.00</span>
                                                 </span>
-                                                <div class="mt-4">
-                                                    <button class="btn-main no-decoration w-400">Add to
-                                                        Cart</button>
-                                                </div>
+
+                                            </span>
+                                            <div class="mt-4">
+                                                <button class="btn-main no-decoration w-400">Add to
+                                                    Cart</button>
                                             </div>
                                         </div>
                                     </div>
-    
-    
-                                    <div>
-                                        <div class="products-card bg-white">
-                                            <div class="product-card-img">
-                                                <img src="assets/images/t-pro2.webp" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="product-card-text">
-                                                <p
-                                                    class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
-                                                    E. Brown Shoes</p>
-                                                <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
-                                                    dolor sit amet
-                                                    consectetur
-                                                    adipisicing.</p>
-                                                <span class="d-flex">
-                                                    <del class="text-black">
-                                                        <span class="cross-amount"><bdi><span
-                                                                    class="">$</span>599.00</bdi></span>
-                                                    </del>
-                                                    <span class="new-amount ms-1 d-flex">
-                                                        <span class="">$</span><span class="price">100.00</span>
-                                                    </span>
-    
+                                </div>
+
+
+                                <div>
+                                    <div class="products-card bg-white">
+                                        <div class="product-card-img">
+                                            <img src="assets/images/t-pro2.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="product-card-text">
+                                            <p class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-2 mb-1">
+                                                E. Brown Shoes</p>
+                                            <p class="product-dec w-500  ellipsis-2 text-grey">Lorem ipsum
+                                                dolor sit amet
+                                                consectetur
+                                                adipisicing.</p>
+                                            <span class="d-flex">
+                                                <del class="text-black">
+                                                    <span class="cross-amount"><bdi><span
+                                                                class="">$</span>599.00</bdi></span>
+                                                </del>
+                                                <span class="new-amount ms-1 d-flex">
+                                                    <span class="">$</span><span class="price">100.00</span>
                                                 </span>
-                                                <div class="mt-4">
-                                                    <button class="btn-main no-decoration w-400">Add to
-                                                        Cart</button>
-                                                </div>
+
+                                            </span>
+                                            <div class="mt-4">
+                                                <button class="btn-main no-decoration w-400">Add to
+                                                    Cart</button>
                                             </div>
                                         </div>
                                     </div>
@@ -728,6 +778,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -867,7 +918,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -883,15 +934,103 @@
     <!-- pagination CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
     <!-- Other JS -->
-    <script src="assets/js/app.js"></script>
+
     <script src="assets/js/sorting.js"></script>
     <!-- Pagination JS -->
     <script src="assets/js/pagination.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script>
+        $('.slider-single').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: false,
+            adaptiveHeight: true,
+            infinite: false,
+            useTransform: true,
+            speed: 400,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
+
+        $('.slider-nav')
+            .on('init', function (event, slick) {
+                $('.slider-nav .slick-slide.slick-current').addClass('is-active');
+            })
+            .slick({
+                slidesToShow: 7,
+                slidesToScroll: 7,
+                dots: false,
+                focusOnSelect: false,
+                infinite: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                    }
+                }, {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                    }
+                }, {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                }]
+            });
+
+        $('.slider-single').on('afterChange', function (event, slick, currentSlide) {
+            $('.slider-nav').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.slider-nav .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
+        });
+
+        $('.slider-nav').on('click', '.slick-slide', function (event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+
+            $('.slider-single').slick('slickGoTo', goToSingleSlide);
+
+        });
+
+
+        // ==========================================================single products tabs
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active-tab";
+
+        }
         document.getElementById("defaultOpen").click();
     </script>
 
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

@@ -135,6 +135,16 @@ $('.related-products').owlCarousel({
         }
     }
 })
+// ========================================================carousel dragable
+$(".carousel").swipe({
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+    },
+    allowPageScroll: "vertical" 
+});
+
+
 // ==============================================================inc/dec buttons
 const plus = document.querySelector(".plus"),
 minus = document.querySelector(".minus"),
@@ -155,28 +165,7 @@ minus.addEventListener("click", ()=>{
 });
 
 
-// ==========================================================single products tabs
-function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-    
-  }
+
 //   $(".defaultOpen").click(); 
 // ===============================================rating system
 $(document).ready(function () {
@@ -241,3 +230,5 @@ $(document).ready(function () {
         min: 0, max: 8, step: 0.5, size: "xl", stars: "8"
     });
 });
+
+
