@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Family Jost -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="assets/css/foundation.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- rating -->
+    <link rel="stylesheet" href="assets/css/star-rating.css">
+    <link href="assets/krajee-fas/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/countrySelect.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css">
+
+    <title>Holly Well</title>
+</head>
+
+<body>
+
+    <!-- ==============================================Topbar -->
+    <div class="top-row">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="d-lg-none d-flex">
+                        <button class="btn-main" type="submit">Sign Up</button>
+                    </div>
+                    <div class="d-lg-flex d-none align-items-center">
+                        <div class="d-flex align-items-center me-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center ms-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="">
+
+                        <select class="form-control" id="countries">
+                            <option value="MY" data-capital="Kuala Lumpur">MY</option>
+                            <option value="TW" data-capital="Taipei">TW</option>
+                            <option value="SG" data-capital="Singapore">SG</option>
+                        </select>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white position-sticky top-0 navbar-single">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo2.jpg" alt="" class="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            Product Catalog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Accessries</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Clothes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">
+                                    Shoes &raquo;
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Black</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">White</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">Brown &raquo; </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Light Brown</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Dark Brown</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Red</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Grey</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Furniture</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-nav" href="">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-lg-flex d-none">
+                <a href="cart.html" class="btn-main " type="submit"><i class="bi bi-bag-heart-fill"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main class=" bg-grey">
+       <div class=" pt-lg-4 pt-3 pb-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 position-sticky top-80 sticky-top">
+                      <!-- Tab links -->
+                      <div class="tab account-side-bar">
+                        <ul class="ms-0 ps-0 mb-0">
+                            <!-- <li  class="tablinks " id="defaultOpen" onclick="openCity(event, 'my-orders')"><a href="my-orders.html" class="active-account-side">My Account &raquo;</a></li> -->
+                            <li class="tablinks " id="defaultOpen" onclick="myAccount(event, 'my-orders')"><a >My Orders &raquo; </a></li>
+                            <li class="tablinks" onclick="myAccount(event, 'info')"><a>Info &raquo; </a></li>
+                            <li class="tablinks" onclick="myAccount(event, 'address')"><a >Addresses &raquo;</a></li>
+                            <li class="tablinks" onclick="myAccount(event, 'terms-of-services')"><a>Terms of Service &raquo; </a></li>
+                            <li class="tablinks" onclick="myAccount(event, 'change-password')"><a>Change Password &raquo; </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="account-main-content">
+                        <div id="my-orders" class=" tabcontent-product-account tabcontent-product ">
+                            <div class="tab account-tab">
+                                <button class="tablinks2 " 
+                                    onclick="orders(event, 'pay')"><i class="bi bi-credit-card-2-front me-md-2 f-16"></i>PAY</button>
+                                <button class="tablinks2" onclick="orders(event, 'ship')"> <i class="bi bi-truck-front me-md-2 f-16"></i>SHIP</button>
+                                <button class="tablinks2" id="defaultOpen-order" onclick="orders(event, 'recieve')"><i class="bi bi-folder-check me-md-2 f-16"></i> RECIEVE</button>
+                                <button class="tablinks2" onclick="orders(event, 'payment')"><i class="bi bi-folder-x me-md-2f-16"></i> PAYMENT FAILED</button>
+                            </div>
+                            <div id="pay" class="tab-content-account tabcontent">
+                                <div class="account-card mt-3">
+                                    <!-- <div class="status">
+                                        Pay Now
+                                   </div> -->
+                                   <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="account-img ">
+                                            <img src="assets/images/realProduct.png" alt="" class="">
+                                        </div>
+                                        <div>
+                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
+                                            </a>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="ms-4">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <hr class="text-grey">
+                                    <div class="d-flex">
+                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
+                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
+                                    </div>
+                                    <hr class="text-grey">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
+                                        <div class="">
+                                            <a href="checkout.html" class="btn-main no-decoration">Pay Now</a>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id="ship" class="tab-content-account tabcontent">
+                                <div class="account-card mt-3">
+                                    <div class="status">
+                                        Shipped
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="account-img ">
+                                            <img src="assets/images/realProduct.png" alt="" class="">
+                                        </div>
+                                        <div>
+                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
+                                            </a>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="ms-4">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <hr class="text-grey">
+                                    <div class="d-flex">
+                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
+                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
+                                    </div>
+                                    <hr class="text-grey">
+                                    
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
+                                        <div class="">
+                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="recieve" class="tab-content-account tabcontent">
+                                <div class="account-card mt-3">
+                                    <div class="status bg-success">
+                                        Recieved
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="account-img ">
+                                            <img src="assets/images/realProduct.png" alt="" class="">
+                                        </div>
+                                        <div>
+                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
+                                            </a>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="ms-4">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <hr class="text-grey">
+                                    <div class="d-flex">
+                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
+                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
+                                    </div>
+                                    <hr class="text-grey">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
+                                        <div class="">
+                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="payment" class="tab-content-account tabcontent">
+                                <div class="account-card mt-3">
+                                    <div class="status bg-danger">
+                                        Payment Failed
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <div class="account-img ">
+                                            <img src="assets/images/realProduct.png" alt="" class="">
+                                        </div>
+                                        <div>
+                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
+                                            </a>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="ms-4">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <hr class="text-grey">
+                                    <div class="d-flex">
+                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
+                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
+                                    </div>
+                                    <hr class="text-grey">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
+                                        <div class="">
+                                            <a href="checkout.html" class="btn-main no-decoration">Try Again</a>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
+                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="info" class=" tabcontent-product-account tabcontent-product ">
+                            <p class="text text-justify f-16 w-400">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                                libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                                dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                                natus vero, error expedita iste!
+                            </p>
+                        </div>
+
+                        <div id="address" class=" tabcontent-product-account tabcontent-product ">
+                            <p class="text text-justify f-16 w-400">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                                libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                                dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                                natus vero, error expedita iste!
+                            </p>
+                        </div>
+
+                        <div id="terms-of-services" class=" tabcontent-product-account tabcontent-product ">
+                            <p class="text text-justify f-16 w-400">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                                libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                                dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                                natus vero, error expedita iste!
+                            </p>
+                        </div>
+
+                        <div id="change-password" class=" tabcontent-product-account tabcontent-product ">
+                            <p class="text text-justify f-16 w-400">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum deserunt
+                                libero ratione, delectus velit possimus quae ea est? Sit dignissimos nesciunt porro nisi
+                                dolorum numquam facere unde laudantium quidem placeat necessitatibus deleniti quibusdam a
+                                natus vero, error expedita iste!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+       </div>
+    </main>
+
+    <footer class=" footer ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  mb-lg-0 mb-4 d-flex justify-content-center flex-column align-items-center">
+                    <h1 class="f-24 w-600 footer-logo-text font-garmond text-yellow">HOLLY WELL</h1>
+                    <a href="index.html" class="no-decoration"><img src="assets/images/logo.png" alt=""
+                            class="img-fluid footer-logo mx-auto" style="height: 150px;"></a>
+                </div>
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Categories</h1>
+                    <div class="mt-3  text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover ">
+                            Shoes
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Cosmatics
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Colothes
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Accessries
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration">
+                            Furniture
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Links</h1>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Customer Support
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            My Account
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            FAQ
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <a href="" class="f-16 w-400 text-white no-decoration hover">
+                            Terms & Conditions
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3  mb-lg-0 mb-4">
+                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Locations</h1>
+                    <div class="mt-3">
+                        <p class="f-16 w-400 text-white no-decoration mb-0 pb-0 text-lg-start text-center">
+                            Jln. Cempaka Wangi No 22, Jakarta - Indonesia
+                        </p>
+                    </div>
+                    <div class="mt-3 text-lg-start text-center">
+                        <div
+                            class="d-flex align-items-center justify-content-lg-start justify-content-center me-3 f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 ">
+                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center f-14">
+                            <a href="" class="no-decoration text-white">
+                                <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                            <div class="social me-2">
+                                <a href="" class=""><i class="bi bi-facebook"></i></a>
+                            </div>
+                            <div class="social me-2">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="social me-2">
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12 mb-2">
+                    <hr class="text-white ">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <p class="f-14 text-white w-400 mb-0 pb-0 text-lg-start text-center mt-lg-0 mt-4">Copyright © 2023
+                        HOLLY WELL.</p>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 d-flex justify-content-lg-end justify-content-center">
+                    <img src="assets/images/payment.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/isotope/packery-mode.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <!-- rating -->
+    <script src="assets/krajee-fas/theme.js" type="text/javascript"></script>
+    <script src="assets/krajee-svg/theme.js" type="text/javascript"></script>
+    <script src="assets/js/rating.js" type="text/javascript"></script>
+    <!-- pagination CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
+    <!-- Other JS -->
+
+    <script src="assets/js/sorting.js"></script>
+    <!-- Pagination JS -->
+    <script src="assets/js/pagination.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+      
+        // ==========================================================single products tabs
+        function myAccount(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent-product");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active-account-side", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active-account-side";
+
+        }
+        document.getElementById("defaultOpen").click();
+
+
+         // ==========================================================single products tabs
+        // ==========================================================single products tabs
+        function orders(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active-tab";
+
+        }
+        document.getElementById("defaultOpen-order").click();
+    </script>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

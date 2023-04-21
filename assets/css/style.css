@@ -379,7 +379,7 @@ body {
 .experience h1 {
     font-size: 45px;
     font-weight: 600;
-    color: var(--orange);
+    color: var(--blue);
 
 }
 
@@ -522,7 +522,7 @@ body {
 
 .top-carousel-content2 h1 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
 }
 
@@ -536,6 +536,7 @@ body {
 .products-card {
     height: 100%;
     transition: all .5s ease-in-out;
+    position: relative;
 }
 
 .products-card:hover {
@@ -1089,9 +1090,30 @@ product catalog
 }
 
 .cart-btn:hover {
+    background-color: var(--blue);
+}
+.view-btn {
+    font-size: 24px;
+    color: white !important;
+    border: none;
+    padding: 8px 34px;
+    font-weight: 500;
     background-color: var(--orange);
+    border-radius: 0px;
+    margin-bottom: 90px;
 }
 
+.view-btn:hover {
+    background-color: var(--blue);
+}
+.bg-grey-product{
+/* background-color:#F8F8FA; */
+border: 1px solid #F8F8FA;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+.bg-grey-product .product-card-img{
+    background-color: #F8F8FA ;
+}
 /* ===============================================================single product tabs */
 .product-tab {
     overflow: hidden;
@@ -1136,7 +1158,12 @@ product catalog
     border: 1px solid #F1F3F4;
     border-top: none;
 }
-
+.tabcontent2{
+    display: none;
+    padding: 14px 12px;
+    border: 1px solid #F1F3F4;
+    border-top: none;
+}
 .review-card-full {
     background-color: #F1F3F4 !important;
     min-height: 100px !important;
@@ -1213,4 +1240,187 @@ product catalog
     width: 100%;
     object-fit: contain;
     
+}
+
+/* =====================================================================store */
+.sale-tag{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--orange);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+/* ===============================================================================FAQ */
+	/* Custom style */
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        transform: scale(.7) !important;
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+      }
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--grey-light);
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-item {
+    background-color: #fff;
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+.accordion-button{
+    font-size: 16px;
+    color: var(--heading);
+    font-weight: 600;
+}
+.card-body p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+    text-align: justify;
+}
+
+
+/* =============================================================================my account */
+.account-side-bar{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px 15px !important;
+    border-radius: 10px;
+    /* width: max-content; */
+}
+
+.account-side-bar ul{
+    list-style: none;
+    
+}
+.tablinks{
+    cursor: pointer;
+}
+
+.account-side-bar ul li a{
+    font-size: 16px;
+    color:var(--heading);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.account-side-bar ul li{
+   border-bottom: 1px solid var(--grey);
+   padding-bottom: 5px;
+   margin-bottom: 15px !important;
+}
+.account-side-bar ul li:last-child{
+    margin-bottom: 0px !important;
+    border-bottom: none !important;
+}
+.active-account-side{
+    color: var(--blue) !important;
+    font-weight: 500 !important;
+}
+
+.account-main-content{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px 15px !important;
+    border-radius: 10px;
+   
+}
+.top-80{
+    top: 80px;
+}
+
+.account-tab {
+    overflow: hidden;
+    background-color: #F1F3F4 !important;
+    border-radius: 3px;
+    border: 1px solid #F1F3F4;
+    display: flex;
+    justify-content: space-between;
+}
+.account-tab button {
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px !important;
+    transition: 0.3s;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: black;
+    color: #313D4D;
+    font-weight: 600;
+    margin-bottom:  0px !important;
+}
+
+/* Change background color of buttons on hover */
+.account-tab button:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.account-tab button.active-tab {
+    background-color: var(--yellow);
+    color: white;
+}
+.tabcontent-product-account{
+    border: none;
+
+}
+.account-card{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #F1F3F4;
+    padding: 15px;
+    position: relative;
+}
+.status{
+    position: absolute;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 3px;
+    right: -3px;
+    top: -6px;
+}
+.account-img{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-color: white;
+    padding: 6px;
+}
+
+.account-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }

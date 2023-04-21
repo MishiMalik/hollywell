@@ -2,7 +2,7 @@
 :root{
     --orange:#D25B20;
     --yellow:#E8D230;
-    --blue:#1B9BA9;
+    --blue:#4399CF;
     --grey:#B8BFB7;
     --grey-dark:#979797;
     --grey-light:#F9F9F9;
@@ -159,11 +159,11 @@
     border: none;
     padding: 5px 15px;
     font-weight: 500;
-    background-color: var(--orange);
+    background-color: var(--yellow);
     border-radius: 0px;
 }
 .btn-main:hover{
-    background-color: var(--yellow);
+    background-color: var(--blue);
 }
 .btn-main-yellow{
     font-size: 16px;
@@ -175,7 +175,7 @@
     border-radius: 0px;
 }
 .btn-main-yellow:hover{
-    background-color: var(--orange);
+    background-color: var(--blue);
 }
 @media only screen and (max-width:767px){
     .f-40{
@@ -190,6 +190,9 @@
     
 }
 @media only screen and (max-width:500px){
+    .f-22{
+        font-size: 18px;
+    }
     .f-40{
         font-size: 28px;
     }
@@ -201,5 +204,16 @@
     }
     .f-28{
         font-size: 20px;
+    }
+    .accordion-button{
+        font-size: 14px;
+        color: var(--heading);
+        font-weight: 600;
+    }
+    .card-body p{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text);
+        text-align: justify;
     }
 }

@@ -80,6 +80,39 @@
   .carousel-item img {
     height: 300px;
   }
+  .account-side-bar{
+    background-color: #ffffff !important;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px 15px !important;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .account-side-bar ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    overflow-x:scroll;
+    /* min-width: 500px; */
+}
+.account-side-bar ul li{
+  border-bottom: 0px solid var(--grey);
+  padding-bottom: 0px;
+  margin-bottom: 0px !important;
+  margin-right: 25px;
+}
+.account-side-bar ul li:last-child{
+   margin-bottom: 0px !important;
+   border-bottom: none !important;
+}
+.active-account-side{
+  color:white !important;
+  font-weight: 500 !important;
+  background-color: var(--blue);
+  padding: 3px 7px;
+  border-radius: 3px
+}
 }
 
 @media only screen and (max-width:768px) {
@@ -144,6 +177,17 @@
   .cart-btn{
     margin-bottom: 0px !important;
     font-size: 18px;
+  }
+  .view-btn{
+    margin-bottom: 0px !important;
+    font-size: 18px;
+  }
+  .account-main-content{
+    padding: 0px !important;
+  }
+  .sticky-top{
+    position:  relative !important;
+    top:unset;
   }
 }
 
@@ -212,5 +256,49 @@
 }
 .mall-sort-child{
   width: 100%;
+}
+.sale-tag{
+  position: absolute;
+  top: -5px;
+  right: -1px;
+  height: 30px;
+  width: 30px;
+  background-color: var(--orange);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+.account-img{
+  height: 60px;
+  width: 60px;
+}
+.account-card{
+  padding: 10px !important;
+}
+.account-img{
+  margin-right: 7px !important;
+}
+.tablinks2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.account-tab button{
+  font-size: 12px !important;
+  padding: 5px 10px !important;
+}
+.account-tab button i{
+  font-size: 20px !important;
+}
+.account-tab button.active-tab{
+  padding: 5px 12px !important;
+}
+.status{
+  font-size: 12px;
 }
 }
