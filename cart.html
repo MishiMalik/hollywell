@@ -201,7 +201,7 @@
                                         </td>
                                         <td style="vertical-align: middle;">
                                             <div class="d-flex align-items-center">
-                                                <div class="wrapper wrapper2">
+                                                <div class="wrapper wrapper2 counter" data-count="0">
                                                     <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
                                                     <span class="num2">01</span>
                                                     <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
@@ -245,7 +245,7 @@
                                         </td>
                                         <td style="vertical-align: middle;">
                                             <div class="d-flex align-items-center">
-                                                <div class="wrapper wrapper2">
+                                                <div class="wrapper wrapper2 counter" data-count="0">
                                                     <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
                                                     <span class="num2">01</span>
                                                     <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
@@ -288,7 +288,7 @@
                                         </td>
                                         <td style="vertical-align: middle;">
                                             <div class="d-flex align-items-center">
-                                                <div class="wrapper wrapper2">
+                                                <div class="wrapper wrapper2 counter" data-count="0">
                                                     <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
                                                     <span class="num2">01</span>
                                                     <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
@@ -1173,21 +1173,25 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         // ==============================================================inc/dec buttons
-        const plus2 = document.querySelector(".plus2"),
-            minus2 = document.querySelector(".minus2"),
-            num2 = document.querySelector(".num2");
-        let a2 = 1;
-        plus2.addEventListener("click", () => {
+        // const plus2 = $(".plus2"),
+        //     minus2 = $(".minus2")
+            
+        
+            $(".plus2").on("click", () => {
+            const num2 = $(this).closest("div").find(".num2")
+            console.log($(this).closest("div"));
+            let a2 = $(this).closest(".counter").data("count");
             a2++;
             a2 = (a2 < 10) ? "0" + a2 : a2;
-            num2.innerText = a2;
+            num2.text(a2);
+            $(this).closest(".counter").data("count", a2);
         });
 
-        minus2.addEventListener("click", () => {
+        $(".minus2").on("click", () => {
             if (a2 > 1) {
                 a2--;
                 a2 = (a2 < 10) ? "0" + a2 : a2;
-                num2.innerText = a2;
+                num2.text(a2);
             }
         });
     </script>
