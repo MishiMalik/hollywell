@@ -83,7 +83,7 @@
   .account-side-bar{
     background-color: #ffffff !important;
     box-shadow: 0 0 5px #ccc;
-    padding: 10px 15px !important;
+    padding: 0px 10px !important;
     border-radius: 10px;
     margin-bottom: 15px;
     width: 100%;
@@ -95,6 +95,7 @@
     justify-content: space-between;
     overflow-x:scroll;
     /* min-width: 500px; */
+    padding: 10px 0px !important;
 }
 .account-side-bar ul li{
   border-bottom: 0px solid var(--grey);
@@ -300,5 +301,8 @@
 }
 .status{
   font-size: 12px;
+}
+.sticky-top{
+  z-index: 5;
 }
 }
