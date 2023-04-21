@@ -44,7 +44,6 @@
 </head>
 
 <body>
-
     <!-- ==============================================Topbar -->
     <div class="top-row">
         <div class="container-fluid">
@@ -150,7 +149,7 @@
                         <a class="nav-link " href="store.html">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active-nav" href="my-account.html">My Account</a>
+                        <a class="nav-link " href="my-account.html">My Account</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="faq.html">FAQ</a>
@@ -159,7 +158,7 @@
 
             </div>
             <div class="d-lg-flex d-none">
-                <a href="cart.html" class="btn-main no-decoration" type="submit"><i class="bi bi-bag-heart-fill"></i></a>
+                <a href="sign-up.html" class="btn-main no-decoration" type="submit">Contact</a>
             </div>
         </div>
     </nav>
@@ -167,763 +166,209 @@
        <div class=" pt-lg-4 pt-3 pb-5">
         <div class="container">
             <div class="row ">
-                <div class="col-lg-3 ">
-                      <!-- Tab links -->
-                      <div class="tab account-side-bar">
-                        <ul class="ms-0 ps-0 mb-0">
-                            <!-- <li  class="tablinks " id="defaultOpen" onclick="openCity(event, 'my-orders')"><a href="my-orders.html" class="active-account-side">My Account &raquo;</a></li> -->
-                            <li class="tablinks "  id="defaultOpen" onclick="myAccount(event, 'my-orders')"><a >My Orders &raquo; </a></li>
-                            <li class="tablinks"   onclick="myAccount(event, 'info')"><a>Info &raquo; </a></li>
-                            <li class="tablinks" onclick="myAccount(event, 'address')"><a >Addresses &raquo;</a></li>
-                            <li class="tablinks" onclick="myAccount(event, 'terms-of-services')"><a>Terms of Service &raquo; </a></li>
-                            <li class="tablinks" onclick="myAccount(event, 'change-password')"><a>Change Password &raquo; </a></li>
-                        </ul>
-                    </div>
-                </div>
+                
                 <div class="col-lg-9">
                     <div class="account-main-content">
-                        <div id="my-orders" class=" tabcontent-product-account tabcontent-product ">
-                            <div class="tab account-tab">
-                                <button class="tablinks2 "  id="defaultOpen-order"
-                                    onclick="orders(event, 'pay')"><i class="bi bi-credit-card-2-front me-md-2 f-16"></i>PAY</button>
-                                <button class="tablinks2" onclick="orders(event, 'ship')"> <i class="bi bi-truck-front me-md-2 f-16"></i>SHIP</button>
-                                <button class="tablinks2"  onclick="orders(event, 'recieve')"><i class="bi bi-folder-check me-md-2 f-16"></i> RECIEVE</button>
-                                <button class="tablinks2" onclick="orders(event, 'payment')"><i class="bi bi-folder-x me-md-2f-16"></i> PAYMENT FAILED</button>
-                            </div>
-                            <div id="pay" class="tab-content-account tabcontent">
-                                <div class="account-card mt-3">
-                                    <!-- <div class="status">
-                                        Pay Now
-                                   </div> -->
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Pay Now</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <!-- <div class="status">
-                                        Pay Now
-                                   </div> -->
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Pay Now</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <!-- <div class="status">
-                                        Pay Now
-                                   </div> -->
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Pay Now</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="ship" class="tab-content-account tabcontent">
-                                <div class="account-card mt-3">
-                                    <div class="status">
-                                        Shipped
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <div class="status">
-                                        Shipped
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <div class="status">
-                                        Shipped
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="recieve" class="tab-content-account tabcontent">
-                                <div class="account-card mt-3">
-                                    <div class="status bg-success">
-                                        Recieved
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-
-                                <div class="account-card mt-3">
-                                    <div class="status bg-success">
-                                        Recieved
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-
-                                <div class="account-card mt-3">
-                                    <div class="status bg-success">
-                                        Recieved
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <button class="btn-main"  data-bs-toggle="modal" data-bs-target="#feedback">Feedback</button>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="payment" class="tab-content-account tabcontent">
-                                <div class="account-card mt-3">
-                                    <div class="status bg-danger">
-                                        Payment Failed
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Try Again</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <div class="status bg-danger">
-                                        Payment Failed
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Try Again</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="account-card mt-3">
-                                    <div class="status bg-danger">
-                                        Payment Failed
-                                   </div>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center ">
-                                        <div class="account-img ">
-                                            <img src="assets/images/realProduct.png" alt="" class="">
-                                        </div>
-                                        <div>
-                                            <a href="" class="no-decoration"> <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab nihil vel odio repellendus aut ratione!</h1>
-                                            </a>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
-                                                <p class="mb-0 pb-0 f-16 w-400">#086480988</p>
-                                            </div>
-                                        </div>
-                                       </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="ms-4">
-                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
-                                            </div>
-                                        </div>
-                                   </div>
-                                   <hr class="text-grey">
-                                    <div class="d-flex">
-                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">Location:</p>
-                                        <p class="mb-0 pb-0 f-16 w-400">ABC street, City, Country</p>
-                                    </div>
-                                    <hr class="text-grey">
-                                    <div class="d-flex justify-content-between align-items-center flex-wrap ">
-                                        <div class="">
-                                            <a href="checkout.html" class="btn-main no-decoration">Try Again</a>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Shipping:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 9.00</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="mb-0 pb-0 w-600 text-dark f-14 me-1">Order Total:</p>
-                                                <p class="mb-0 pb-0 f-14 w-400">RM 54.00</p>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="info" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 mb-3">Personal Information</h1>
-                            <form action="">
-                                <div class="container-fluid p-0">
-                                    <div class="row p-0">
-                                        <div class="col-lg-6 order-lg-1 order-2" >
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">User Name</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" value="ABC-name">
-                                            </div>
-            
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Name</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" value="ABC">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 order-lg-2 order-1">
-                                              <div class="d-flex justify-content-center mb-3">
-                                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                                                  <p class="mb-0"><img class="edit-img profile-large img-fluid " src="assets/images/pdc-1.png" id="output" /></p>
-                                                  <p class="mb-0"><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
-                                                      style="display: none;"></p>
-                                                  <button class="btn-main mt-3" type="button"><label for="file" style="cursor: pointer;" class="upload-img-btn ">Edit Image</label></button>
+                        <div class="table-div">
+                            <table class="table text-white">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center table-heading">Description</th>
+                                        <th scope="col" class="text-center table-heading">Quantity</th>
+                                        <th scope="col" class=" text-center table-heading">Price</th>
+                                        <th scope="col" class="text-center table-heading">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="account-card">
+                                        <td>
+                                            <div class="d-flex align-items-center ">
+                                                <div class="account-img ">
+                                                    <img src="assets/images/realProduct.png" alt="" class="">
                                                 </div>
-                                    
-                                              </div>
-                                        </div>
-                                    </div>
-                                    <div class="row p-0">
-                                        <div class="col-lg-12 ">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Email </label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" value="email@gmail.com">
+                                                <div>
+                                                    <a href="" class="no-decoration">
+                                                        <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum
+                                                            dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab
+                                                            nihil vel odio repellendus aut ratione!</h1>
+                                                    </a>
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                        <p class="mb-0 pb-0 f-16 w-400 text">#086480988</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 ">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Date of Birth </label>
-                                                <input type="date" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" >
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="wrapper wrapper2">
+                                                    <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
+                                                    <span class="num2">01</span>
+                                                    <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 ">
-                                            <div class="d-flex justify-content-end">
-                                                <button class="btn-main-yellow no-decoration f-18 px-4 py-2">Submit</a>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </form>
-                        </div>
-
-                        <div id="address" class=" tabcontent-product-account tabcontent-product ">
-                            <div class="d-flex flex-md-row flex-column justify-content-between align-items-md-start align-items-between">
-                                <h1 class="heading f-24 w-500 mb-3">Your Addresses</h1>
-                                <button class="btn-main" data-bs-toggle="modal" data-bs-target="#add-address">Add Address</button>
-                            </div>
-
-                            <div class="account-card mt-3">
-                               <div class="d-flex flex-md-row flex-column justify-content-between align-items-start">
-                                <div class="">
-                                       <h1 class="f-16 w-500 text-dark heading">Lorem ipsum dolor.</h1>
-                                       <h1 class="f-16 w-500 text-dark heading ">Lorem ipsum dolor Gfaty.</h1>
-                                       <p class="text f-16 w-400 mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint saepe dolores reiciendis doloremque eius natus, doloribus architecto blanditiis itaque.</p>
-                                   </div>
-                                    <div class="d-flex align-items-center mt-md-0 mt-3">
-                                        <button class="btn-main me-1" data-bs-toggle="modal" data-bs-target="#edit-info"><i class="bi bi-pencil-square"></i></button>
-                                        <button class="btn-main"><i class="bi bi-trash3"></i></button>
-                                    </div>
-                               </div>
-                            </div>
-
-                            <div class="account-card mt-3">
-                                <div class="d-flex flex-md-row flex-column justify-content-between align-items-start">
-                                 <div class="">
-                                        <h1 class="f-16 w-500 text-dark heading">Lorem ipsum dolor.</h1>
-                                        <h1 class="f-16 w-500 text-dark heading ">Lorem ipsum dolor Gfaty.</h1>
-                                        <p class="text f-16 w-400 mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint saepe dolores reiciendis doloremque eius natus, doloribus architecto blanditiis itaque.</p>
-                                    </div>
-                                     <div class="d-flex align-items-center mt-md-0 mt-3">
-                                         <button class="btn-main me-1" data-bs-toggle="modal" data-bs-target="#edit-info"><i class="bi bi-pencil-square"></i></button>
-                                         <button class="btn-main"><i class="bi bi-trash3"></i></button>
-                                     </div>
-                                </div>
-                             </div>
-                          
-
-                             
-                        </div>
-
-                        <div id="terms-of-services" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 mb-3">Terms of Services</h1>
-
-                            <h2 class="f-18 w-500 heading">Point A.</h2>
-                            <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
-
-
-                            <h2 class="f-18 w-500 heading">Point B.</h2>
-                            <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
-
-                            <h2 class="f-18 w-500 heading">Point C.</h2>
-                            <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
-
-                            <h2 class="f-18 w-500 heading">Point D.</h2>
-                            <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
-
-                            <h2 class="f-18 w-500 heading">Point E.</h2>
-                            <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
-
-
-                        </div>
-
-                        <div id="change-password" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 mb-3">Change Password</h1>
-                            <form action="">
-                                <div class="container-fluid p-0">
-                                    <div class="row p-0">
-                                        <div class="col-lg-12 ">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Old Password </label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" value="email@gmail.com">
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex justify-content-center">
+                                                <button class="btn-main">
+                                                    <i class="bi bi-trash3"></i>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 ">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">New Password</label>
-                                                <input type="password" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" >
+                                        </td>
+                    
+                    
+                                    </tr>
+                    
+                                    <tr class="account-card">
+                                        <td>
+                                            <div class="d-flex align-items-center ">
+                                                <div class="account-img ">
+                                                    <img src="assets/images/realProduct.png" alt="" class="">
+                                                </div>
+                                                <div>
+                                                    <a href="" class="no-decoration">
+                                                        <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum
+                                                            dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab
+                                                            nihil vel odio repellendus aut ratione!</h1>
+                                                    </a>
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                        <p class="mb-0 pb-0 f-16 w-400 text">#086480988</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 ">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Confirm Password</label>
-                                                <input type="password" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" >
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="wrapper wrapper2">
+                                                    <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
+                                                    <span class="num2">01</span>
+                                                    <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 ">
-                                            <div class="d-flex justify-content-end">
-                                                <button class="btn-main-yellow no-decoration f-18 px-4 py-2">Save</a>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </form>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex justify-content-center">
+                                                <button class="btn-main">
+                                                    <i class="bi bi-trash3"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                    
+                    
+                                    </tr>
+                                    <tr class="account-card">
+                                        <td>
+                                            <div class="d-flex align-items-center ">
+                                                <div class="account-img ">
+                                                    <img src="assets/images/realProduct.png" alt="" class="">
+                                                </div>
+                                                <div>
+                                                    <a href="" class="no-decoration">
+                                                        <h1 class="f-16 w-500 text-dark heading ellipsis-1">Lorem ipsum dolor. Lorem ipsum
+                                                            dolor sit amet consectetur adipisicing elit. Atque inventore odit a numquam ab
+                                                            nihil vel odio repellendus aut ratione!</h1>
+                                                    </a>
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 pb-0 w-600 text-dark f-16 me-1">ID:</p>
+                                                        <p class="mb-0 pb-0 f-16 w-400 text">#086480988</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="wrapper wrapper2">
+                                                    <div class="minus2"><i class="bi bi-dash-circle f-24 text-white"></i></div>
+                                                    <span class="num2">01</span>
+                                                    <span class="plus2"><i class="bi bi-plus-circle f-24 text-white"></i></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex align-items-center">
+                                                <h1 class="f-22 w-500 text-orange m-0 p-0">$800</h1>
+                                            </div>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <div class="d-flex justify-content-center">
+                                                <button class="btn-main">
+                                                    <i class="bi bi-trash3"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                    
+                    
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-lg-3 mt-lg-0 mt-3">
+                    <div class=" account-side-bar">
+                        <div class="table-div2 ">
+                            <table class="table text-white">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class=" table-heading heading">Order Summary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td class="data-row py-2">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+    
+                                                <p class="f-16 w-400 ms-2 text mb-0 pb-0">
+                                                    SubTotal
+                                                </p>
+                                                <p class="f-16 w-500 ms-2 text  mb-0 pb-0">
+                                                    $529.00
+                                                </p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+    
+                                                <p class="f-16 w-400 ms-2 mb-0 pb-0 text">
+                                                    Standrad Shipping
+                                                </p>
+                                                <p class="f-16 w-500 ms-2 mb-0 pb-0 text">
+                                                    $71.00
+                                                </p>
+                                            </div>
+                                        </td>
+    
+    
+                                    </tr>
+                                    <tr>
+                                        <td class="data-row">
+                                            <div class="d-flex align-items-center justify-content-between">
+    
+                                                <p class="f-18 w-600 ms-2 mb-0 pb-0 text">
+                                                    Total
+                                                </p>
+                                                <p class="f-18 w-600 ms-2  mb-0 pb-0 text ">
+                                                    $529.00
+                                                </p>
+                                            </div>
+    
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="checkout.html"><button class="btn-main w-100 mb-lg-0 mb-3">Checkout $5493</button></a>
+                        </div>
+                  </div>
+              </div>
             </div>
            </div>
        </div>
@@ -1726,66 +1171,26 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script>
-            // upload image of student or teachers data
-            var loadFile = function (event) {
-              var image = document.getElementById('output');
-              image.src = URL.createObjectURL(event.target.files[0]);
-            };
-          </script>
     <script>
-      
-        // ==========================================================single products tabs
-        function myAccount(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
+        // ==============================================================inc/dec buttons
+        const plus2 = document.querySelector(".plus2"),
+            minus2 = document.querySelector(".minus2"),
+            num2 = document.querySelector(".num2");
+        let a2 = 1;
+        plus2.addEventListener("click", () => {
+            a2++;
+            a2 = (a2 < 10) ? "0" + a2 : a2;
+            num2.innerText = a2;
+        });
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent-product");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        minus2.addEventListener("click", () => {
+            if (a2 > 1) {
+                a2--;
+                a2 = (a2 < 10) ? "0" + a2 : a2;
+                num2.innerText = a2;
             }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active-account-side", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active-account-side";
-
-        }
-        document.getElementById("defaultOpen").click();
-
-
-         // ==========================================================single products tabs
-        // ==========================================================single products tabs
-        function orders(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks2");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active-tab";
-
-        }
-        document.getElementById("defaultOpen-order").click();
+        });
     </script>
-
 
     <script src="assets/js/app.js"></script>
 </body>

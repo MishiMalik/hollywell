@@ -114,6 +114,8 @@ body {
     letter-spacing: 1.3px;
     text-transform: uppercase;
     padding-bottom: 5px !important;
+    border-bottom: 3px solid transparent;
+    margin-top: 3px !important;
 }
 
 .nav-link:hover {
@@ -1424,3 +1426,73 @@ border: 1px solid #F8F8FA;
     width: 100%;
     object-fit: contain;
 }
+
+.profile-large{
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    border: 3px solid #EEBF79;
+}
+
+/* ======================================================cart */
+.table-heading{
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 600;
+}
+/* ==========================================================inc/dec buttons */
+.wrapper2 {
+    display: flex;
+    align-items: center;
+    background: #F1F3F4;
+    width: fit-content;
+    padding: 5px 15px;
+}
+
+.wrapper2 span {
+    text-align: center;
+
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.wrapper2 span.num2 {
+    font-size: 20px;
+    pointer-events: none;
+    margin: 0px 10px;
+    width: 30px;
+    font-weight: 500;
+    color: var(--heading);
+}
+
+.minus2 {
+    height: 25px;
+    width: 25px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.plus2 {
+    height: 25px;
+    width: 25px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+

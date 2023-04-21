@@ -190,6 +190,14 @@
     position:  relative !important;
     top:unset;
   }
+  .table-div{
+    overflow-x: scroll;
+    padding: 10px;
+  }
+
+  .table-div table{
+    min-width: 500px;
+  }
 }
 
 @media only screen and (max-width:500px) {
