@@ -153,6 +153,25 @@
     overflow: hidden;
 }
 /* ==========================================================buttons */
+.btn-transparent{
+    background-color: transparent;
+    padding: none;
+    border: none;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 500;
+}
+.edit-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 3px 6px;
+    border: none;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 500;
+}
 .btn-main{
     font-size: 16px;
     color: white !important;
@@ -216,4 +235,7 @@
         color: var(--text);
         text-align: justify;
     }
+}
+.border-bottom-1{
+    border-bottom: 1px solid var(--text);
 }
