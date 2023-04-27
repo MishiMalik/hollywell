@@ -176,6 +176,7 @@
                             <li class="tablinks "  id="defaultOpen" onclick="myAccount(event, 'my-orders')"><a >My Orders &raquo; </a></li>
                             <li class="tablinks"   onclick="myAccount(event, 'info')"><a>Info &raquo; </a></li>
                             <li class="tablinks" onclick="myAccount(event, 'address')"><a >Addresses &raquo;</a></li>
+                            <li class="tablinks" onclick="myAccount(event, 'tree')"><a >Placement Tree &raquo;</a></li>
                             <li class="tablinks" onclick="myAccount(event, 'terms-of-services')"><a>Terms of Service &raquo; </a></li>
                             <li class="tablinks" onclick="myAccount(event, 'change-password')"><a>Change Password &raquo; </a></li>
                         </ul>
@@ -790,11 +791,11 @@
                         </div>
 
                         <div id="info" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 pb-2 mb-2 ">Personal Information</h1>
+                            <h1 class="heading f-24 w-500 pb-2 mb-2 border-bottom-1">Personal Information</h1>
                             <form action="">
-                                <div class="container-fluid p-0">
+                                <div class="container-fluid p-0 mt-4">
                                     <div class="row p-0">
-                                        <div class="col-lg-6 order-lg-1 order-2" >
+                                        <div class="col-lg-6 order-lg-1 order-2 px-lg-0" >
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">User Name</label>
                                                 <input type="text" class="form-control" id="exampleInputEmail1"
@@ -807,7 +808,7 @@
                                                     aria-describedby="emailHelp" value="ABC">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 order-lg-2 order-1">
+                                        <div class="col-lg-6 order-lg-2 order-1 px-lg-0">
                                               <div class="d-flex justify-content-center mb-3">
                                                 <div class="d-flex flex-column align-items-center justify-content-center text-center">
                                                   <p class="mb-0"><img class="edit-img profile-large img-fluid " src="assets/images/pdc-1.png" id="output" /></p>
@@ -820,21 +821,21 @@
                                         </div>
                                     </div>
                                     <div class="row p-0">
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Your Email </label>
                                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp" value="email@gmail.com">
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Date of Birth </label>
                                                 <input type="date" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp" >
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="d-flex justify-content-end">
                                                 <button class="btn-main-yellow no-decoration f-18 px-4 py-2">Submit</a>
                                             </div>
@@ -846,47 +847,298 @@
                         </div>
 
                         <div id="address" class=" tabcontent-product-account tabcontent-product ">
-                            <div class="mb-2  d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-between">
-                                <h1 class="heading f-24 w-500 pb-2">Your Addresses</h1>
-                                <button class="btn-main" data-bs-toggle="modal" data-bs-target="#add-address">Add Address</button>
+                            <div class="mb-2 border-bottom-1 d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-between">
+                                <h1 class="heading f-24 w-500 mb-0">Your Addresses</h1>
+                                <button class="btn-main mb-2" data-bs-toggle="modal" data-bs-target="#add-address">Add Address</button>
                             </div>
 
-                            <div class="account-card mt-3">
+                            <div class="account-card mt-3 address-selected form-check">
                                <div class="d-flex flex-md-row flex-column justify-content-between align-items-start">
-                                <div class="">
+                                   <label class="" for="flexRadioDefault1">
                                        <h1 class="f-16 w-500 text-dark heading">Lorem ipsum dolor.</h1>
                                        <h1 class="f-16 w-500 text-dark heading ">Lorem ipsum dolor Gfaty.</h1>
                                        <p class="text f-16 w-400 mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint saepe dolores reiciendis doloremque eius natus, doloribus architecto blanditiis itaque.</p>
-                                   </div>
+                                   </label>
                                     <div class="d-flex align-items-center mt-md-0 mt-3">
                                         <button class="btn-main me-1" data-bs-toggle="modal" data-bs-target="#edit-info"><i class="bi bi-pencil-square"></i></button>
                                         <button class="btn-main"><i class="bi bi-trash3"></i></button>
                                     </div>
-                               </div>
-                               <input type="radio" class="radio-btn" name="address">
+                                </div>
+                               <input type="radio" class="form-check-input radio-btn" checked name="address" id="flexRadioDefault1">
                             </div>
-
-                            <div class="account-card mt-3">
+                            <div class="account-card mt-3 form-check">
                                 <div class="d-flex flex-md-row flex-column justify-content-between align-items-start">
-                                 <div class="">
+                                    <label class="" for="flexRadioDefault2">
                                         <h1 class="f-16 w-500 text-dark heading">Lorem ipsum dolor.</h1>
                                         <h1 class="f-16 w-500 text-dark heading ">Lorem ipsum dolor Gfaty.</h1>
                                         <p class="text f-16 w-400 mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint saepe dolores reiciendis doloremque eius natus, doloribus architecto blanditiis itaque.</p>
-                                    </div>
+                                    </label>
                                      <div class="d-flex align-items-center mt-md-0 mt-3">
                                          <button class="btn-main me-1" data-bs-toggle="modal" data-bs-target="#edit-info"><i class="bi bi-pencil-square"></i></button>
                                          <button class="btn-main"><i class="bi bi-trash3"></i></button>
                                      </div>
-                                </div>
-                                <input type="radio" class="radio-btn " name="address">
+                                 </div>
+                                <input type="radio" class="form-check-input radio-btn" name="address" id="flexRadioDefault2">
                              </div>
                           
 
                              
                         </div>
 
+                        <div id="tree" class=" tabcontent-product-account tabcontent-product ">
+                            <div class="mb-2 border-bottom-1 d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-between">
+                                <h1 class="heading f-24 w-500  ">Placement Tree</h1>
+                            </div>
+                         <div class="tree-conteiner">
+                            <ul class="tree">
+                                <li>
+                                    <span class="tooltip1">
+                                    <div class="d-flex flex-column align-items-center" >
+                                        <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                        <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                        <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                        <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                    </div>
+                                   <!-- HTML to write -->
+                                   <div class="tooltip1text">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                        <div><p class="f-14 w-500 text-white">100</p></div>
+                                        <div><p class="f-14 w-500 text-white">50</p></div>
+                                        <div><p class="f-14 w-500 text-white">30</p></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                        <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                        <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                        <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                        <div><p class="f-14 w-500 text-white">0</p></div>
+                                        <div><p class="f-14 w-500 text-white">0</p></div>
+                                        <div><p class="f-14 w-500 text-white">0</p></div>
+                                    </div>
+                                   </div>
+
+                                    </span>
+                                  <ul>
+                                    <li> <span class="tooltip1">
+                                        <div class="d-flex flex-column align-items-center" >
+                                            <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                            <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                            <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                            <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                        </div>
+                                       <!-- HTML to write -->
+                                       <div class="tooltip1text">
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                            <div><p class="f-14 w-500 text-white">100</p></div>
+                                            <div><p class="f-14 w-500 text-white">50</p></div>
+                                            <div><p class="f-14 w-500 text-white">30</p></div>
+                                        </div>
+    
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                            <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                            <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                            <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                        </div>
+    
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                        </div>
+                                       </div>
+    
+                                        </span>
+                                      <ul>
+                                        <li> <span class="tooltip1">
+                                            <div class="d-flex flex-column align-items-center" >
+                                                <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                                <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                                <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                                <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                            </div>
+                                           <!-- HTML to write -->
+                                           <div class="tooltip1text">
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100</p></div>
+                                                <div><p class="f-14 w-500 text-white">50</p></div>
+                                                <div><p class="f-14 w-500 text-white">30</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                                <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                                <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                            </div>
+                                           </div>
+        
+                                            </span>
+                                        </li>
+                                        <li> <span class="tooltip1">
+                                            <div class="d-flex flex-column align-items-center" >
+                                                <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                                <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                                <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                                <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                            </div>
+                                           <!-- HTML to write -->
+                                           <div class="tooltip1text">
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100</p></div>
+                                                <div><p class="f-14 w-500 text-white">50</p></div>
+                                                <div><p class="f-14 w-500 text-white">30</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                                <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                                <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                            </div>
+                                           </div>
+        
+                                            </span>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li> <span class="tooltip1">
+                                        <div class="d-flex flex-column align-items-center" >
+                                            <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                            <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                            <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                            <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                        </div>
+                                       <!-- HTML to write -->
+                                       <div class="tooltip1text">
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                            <div><p class="f-14 w-500 text-white">100</p></div>
+                                            <div><p class="f-14 w-500 text-white">50</p></div>
+                                            <div><p class="f-14 w-500 text-white">30</p></div>
+                                        </div>
+    
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                            <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                            <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                            <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                        </div>
+    
+                                        <div class="d-flex justify-content-between align-items-center w-100">
+                                            <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                            <div><p class="f-14 w-500 text-white">0</p></div>
+                                        </div>
+                                       </div>
+    
+                                        </span>
+                                      <ul>
+                                        <li> <span class="tooltip1">
+                                            <div class="d-flex flex-column align-items-center" >
+                                                <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                                <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                                <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                                <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                            </div>
+                                           <!-- HTML to write -->
+                                           <div class="tooltip1text">
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100</p></div>
+                                                <div><p class="f-14 w-500 text-white">50</p></div>
+                                                <div><p class="f-14 w-500 text-white">30</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                                <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                                <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                            </div>
+                                           </div>
+        
+                                            </span>
+                                      
+                                        </li>
+                                        <li> <span class="tooltip1">
+                                            <div class="d-flex flex-column align-items-center" >
+                                                <img src="assets/images/tree-img.png" alt="" class="tree-img">
+                                                <h1 class="f-16 w-600 text-orange mb-0">zhaoyanni</h1>
+                                                <p class="mb-0 pb-0 f-12 w-500"> SG51057912</p>
+                                                <p class="mb-0 pb-0 f-12 w-500">(Titanium)</p>
+                                            </div>
+                                           <!-- HTML to write -->
+                                           <div class="tooltip1text">
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total Downline</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100</p></div>
+                                                <div><p class="f-14 w-500 text-white">50</p></div>
+                                                <div><p class="f-14 w-500 text-white">30</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Total BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">100,000</p></div>
+                                                <div><p class="f-14 w-500 text-white">50,098</p></div>
+                                                <div><p class="f-14 w-500 text-white">30,230</p></div>
+                                            </div>
+        
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div><h1 class="f-14 w-500 text-white">Today BV</h1></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                                <div><p class="f-14 w-500 text-white">0</p></div>
+                                            </div>
+                                           </div>
+        
+                                            </span>
+                                   
+                                        </li>
+                                      </ul>
+                                    </li>
+                                   
+                                  </ul>
+                                </li>
+                              </ul>
+                         </div>
+                             
+                        </div>
+
                         <div id="terms-of-services" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 pb-2">Terms of Services</h1>
+                            <h1 class="heading f-24 w-500 pb-2 border-bottom-1 mb-3">Terms of Services</h1>
 
                             <h2 class="f-18 w-500 heading">Point A.</h2>
                             <p class="text f-16 w-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto natus quidem omnis vel nobis magni expedita magnam maxime excepturi hic, soluta qui similique numquam enim assumenda dolore praesentium! Reprehenderit obcaecati officiis cum ipsa, enim temporibus laboriosam hic! Quisquam, quasi debitis provident ratione eos inventore dicta tempore tempora velit accusantium.</p>
@@ -908,32 +1160,32 @@
                         </div>
 
                         <div id="change-password" class=" tabcontent-product-account tabcontent-product ">
-                            <h1 class="heading f-24 w-500 mb-3 ">Change Password</h1>
+                            <h1 class="heading f-24 w-500 mb-3 border-bottom-1 pb-2">Change Password</h1>
                             <form action="">
                                 <div class="container-fluid p-0">
                                     <div class="row p-0">
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Old Password </label>
                                                 <input type="text" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp" value="email@gmail.com">
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">New Password</label>
                                                 <input type="password" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp" >
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label f-16 w-500 text">Confirm Password</label>
                                                 <input type="password" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp" >
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 ">
+                                        <div class="col-lg-12 px-lg-0">
                                             <div class="d-flex justify-content-end">
                                                 <button class="btn-main-yellow no-decoration f-18 px-4 py-2">Save</a>
                                             </div>
@@ -1807,9 +2059,23 @@
         }
         document.getElementById("defaultOpen-order").click();
     </script>
+    <script>
+
+    </script>
 
 
     <script src="assets/js/app.js"></script>
+
+    <script>
+        $(".radio-btn").on("change", function() {
+            $(".account-card").removeClass("address-selected")
+            $(this).closest(".account-card").addClass("address-selected")
+        })
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
 </body>
 
 </html>

@@ -203,6 +203,9 @@ padding: 5px !important;
   .wrapper2{
     padding: 0px !important;
   }
+  .tree-conteiner{
+    overflow-x: scroll;
+  }
 }
 
 @media only screen and (max-width:500px) {

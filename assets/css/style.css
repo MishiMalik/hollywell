@@ -1463,7 +1463,7 @@ product catalog
 .account-main-content {
     background-color: #ffffff;
     box-shadow: 0 0 5px #ccc;
-    padding: 20px 25px !important;
+    padding: 5px 15px !important;
     border-radius: 10px;
 
 }
@@ -1887,3 +1887,134 @@ input[type='radio'] {
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
 }
+
+.address-selected{
+    border: 3px solid var(--blue);
+}
+
+
+/* =======================================================Treee */
+.tree,
+.tree ul,
+.tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+   
+}
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+    width: 100%;
+}
+.tree,
+.tree ul {
+    display: table;
+}
+.tree ul {
+    width: 100%;
+}
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+.tree li:before {
+    outline: solid 1px var(--yellow);
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tree li:first-child:before {
+    left: 50%;
+}
+.tree li:last-child:before {
+    right: 50%;
+}
+.tree code,
+.tree span {
+    border: solid .1em var(--yellow);
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .2em .5em;
+    position: relative;
+}
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+    outline: solid 1px var(--yellow);
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+.tree ul:before {
+    top: -.5em;
+}
+.tree code:before,
+.tree span:before {
+    top: -.55em;
+}
+.tree>li {
+    margin-top: 0;
+}
+.tree>li:before,
+.tree>li:after,
+.tree>li>code:before,
+.tree>li>span:before {
+    outline: none;
+}
+.tree-img{
+    height: 40px;
+    width: auto;
+}
+
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip1 .tooltip1text {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left:calc(100% - 190px);
+    padding: 10px;
+    z-index: 12;
+    /* margin-left: -60px; */
+  }
+  .tooltip1 .tooltip1text  div h1{
+    min-width: 100px;
+    text-align: left;
+  }
+  .tooltip1 .tooltip1text  div p{
+    min-width: 65px;
+    text-align: center;
+  }
+  .tooltip1 .tooltip1text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip1:hover .tooltip1text {
+    visibility: visible;
+  }
