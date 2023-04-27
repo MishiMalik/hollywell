@@ -1325,13 +1325,13 @@ product catalog
     background-color: #fff
 }
 
-.is-active {
-    border: 1px solid var(--yellow) !important;
+/* .is-active {
+    outline: 1px solid var(--yellow) !important;
 }
 
 .slick-slide.slick-current {
-    border: 1px solid transparent !important;
-}
+    outline: 1px solid transparent !important;
+} */
 
 /* .slick-current{
     border: 2px solid var(--yellow) !important;
