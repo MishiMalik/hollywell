@@ -1353,6 +1353,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/sorting.js"></script>
+    <script>
+        // ========================================================carousel dragable
+$(".carousel").swipe({
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+    },
+    allowPageScroll: "vertical" 
+});
+    </script>
 </body>
 
 </html>

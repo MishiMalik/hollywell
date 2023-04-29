@@ -1583,9 +1583,9 @@ product catalog
     position: relative;
 }
 .checkbox-btn{
-    position: absolute;
+    /* position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px; */
     width: 15px;
     height: 15px;
 }
@@ -1672,7 +1672,7 @@ product catalog
     align-items: flex-end !important;
 } */
 
-.rate {
+/* .rate {
     float: left;
     height: 46px;
     padding: 0 10px;
@@ -1712,8 +1712,35 @@ product catalog
 .rate>input:checked~label:hover~label,
 .rate>label:hover~input:checked~label {
     color: #c59b08;
-}
-
+} */
+.rating-box {
+    padding: 25px 50px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  .rating-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .stars i {
+    font-size: 35px;
+    color: #b5b8b1;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .stars i.active {
+    color: var(--yellow);
+    transform: scale(1.2);
+  }
+  
 table.dataTable thead>tr>th.sorting_asc:before,
 table.dataTable thead>tr>th.sorting_desc:after,
 table.dataTable thead>tr>td.sorting_asc:before,
