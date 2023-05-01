@@ -47,7 +47,7 @@ main {
     display: none;
         position: absolute;
         top: calc(100% + 10px);
-        right: -150px;
+        right: -100px;
         background-color: white;
         z-index: 10;
         width: 300px;
@@ -296,6 +296,7 @@ text-align: center;
 /* .z-index-100{
     z-index: 100;
 } */
+
 .dropdown-menu>li:hover>.dropdown-submenu {
     display: block;
 }
