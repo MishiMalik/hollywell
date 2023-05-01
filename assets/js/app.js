@@ -2,33 +2,45 @@
 AOS.init();
 
 // ========================================================================navbar close on scroll and click
-$(function () {
-    $(document).click(function (event) {
-        var navbar = $(".collapse");
-        if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
-            var clickover = $(event.target);
-            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
-            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-                $("button.navbar-toggler").click();
-            }
-        }
-    });
-
+$('.open-icon').on('click',function(){
+    $('.close-icon').css('display','block');
+    $(this).css('display','none');
+    $('.menu-links').css('left','0');
+    $('body').css('overflow-y','hidden');
 });
+$('.close-icon').on('click',function(){
+    $(this).css('display','none');
+    $('.open-icon').css('display','block');
+    $('.menu-links').css('left','-300px');
+    $('body').css('overflow-y','auto');
+});
+// $(function () {
+//     $(document).click(function (event) {
+//         var navbar = $(".collapse");
+//         if (!navbar.is(event.target) && navbar.has(event.target).length === 0) {
+//             var clickover = $(event.target);
+//             var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+//             if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+//                 $("button.navbar-toggler").click();
+//             }
+//         }
+//     });
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  // scrollFunction()
-  var currentScrollPos = window.pageYOffset ;
-     if(currentScrollPos > prevScrollpos + 45){
-        var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
-        if (_opened === true ) {
-            $("button.navbar-toggler").click();
-        }
+// });
 
-    }
-    prevScrollpos = currentScrollPos;
-  }
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   // scrollFunction()
+//   var currentScrollPos = window.pageYOffset ;
+//      if(currentScrollPos > prevScrollpos + 45){
+//         var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+//         if (_opened === true ) {
+//             $("button.navbar-toggler").click();
+//         }
+
+//     }
+//     prevScrollpos = currentScrollPos;
+//   }
 
 
 //   ================================================================================Flags dropdown select
