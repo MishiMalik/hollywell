@@ -293,6 +293,9 @@ text-align: center;
 .menu-list{
     list-style: none;
 }
+/* .z-index-100{
+    z-index: 100;
+} */
 .dropdown-menu>li:hover>.dropdown-submenu {
     display: block;
 }

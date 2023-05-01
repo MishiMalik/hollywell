@@ -140,12 +140,18 @@
   height: 100vh;
   z-index: 100;
   transition: all 1s;
+  overflow-y: auto;
   /* background-color: rgb(220, 239, 244); */
 }
 .menu-list{
   flex-direction: column;
   list-style: none;
 }
+/* .z-index-100{
+position: sticky;
+top: 0;
+z-index: 100 !important;
+} */
 }
 
 @media only screen and (max-width:768px) {
