@@ -1,1271 +1,1715 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstarp -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <!-- Font Family Jost -->
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- EB Garamond -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/countrySelect.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/countrySelect.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"
+    />
     <title>Holly Well</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ==============================================Topbar -->
     <header>
-        <div class="top-row z-index-100">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-lg-none d-flex menu-icons">
-                            <!-- <button class="btn-main" type="submit">Sign Up</button> -->
-                            <i class="bi bi-list f-24 open-icon"></i>
-                            <i class="bi bi-x-lg f-24 close-icon"></i>
-                        </div>
-                        <div class="d-lg-flex d-none align-items-center">
-                            <div class="d-flex align-items-center me-3 f-14">
-                                <a href="" class="no-decoration text-white">
-                                    <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center ms-3 f-14">
-                                <a href="" class="no-decoration text-white">
-                                    <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="d-flex align-items-center">
-                            <div class="">
-
-                                <select class="form-control" id="countries">
-                                    <option value="MY" data-capital="Kuala Lumpur">MY</option>
-                                    <option value="TW" data-capital="Taipei">TW</option>
-                                    <option value="SG" data-capital="Singapore">SG</option>
-                                </select>
-
-                            </div>
-                            <div class="d-lg-flex ">
-                                <a href="sign-up.html" class="btn-sign no-decoration" type="submit">Sign Up</a>
-                            </div>
-                        </div>
-
-                    </div>
+      <div class="top-row z-index-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-lg-none d-flex menu-icons">
+                <!-- <button class="btn-main" type="submit">Sign Up</button> -->
+                <i class="bi bi-list f-24 open-icon"></i>
+                <i class="bi bi-x-lg f-24 close-icon"></i>
+              </div>
+              <div class="d-lg-flex d-none align-items-center">
+                <div class="d-flex align-items-center me-3 f-14">
+                  <a href="" class="no-decoration text-white">
+                    <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i
+                    >info@gmail.com
+                  </a>
                 </div>
+                <div class="d-flex align-items-center ms-3 f-14">
+                  <a href="" class="no-decoration text-white">
+                    <i class="bi bi-telephone me-2 f-14 text-yellow"></i>+60 333
+                    87 566
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="">
+                  <select class="form-control" id="countries">
+                    <option value="MY" data-capital="Kuala Lumpur">MY</option>
+                    <option value="TW" data-capital="Taipei">TW</option>
+                    <option value="SG" data-capital="Singapore">SG</option>
+                  </select>
+                </div>
+                <div class="d-lg-flex">
+                  <a
+                    href="sign-up.html"
+                    class="btn-sign no-decoration"
+                    type="submit"
+                    >Sign Up</a
+                  >
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-        <div class="container-fluid py-2 border-bottom-2">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-6 order-lg-1 order-1">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo-hollywell.png" alt="" class="">
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-12 order-lg-2 order-3 mt-lg-0 mt-2">
-                    <div class="position-relative">
-                        <i class="bi bi-search search-icon"></i>
-                        <input type="search" class="search" placeholder="Search in HollyWell">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6 ms-auto order-lg-3 order-2">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <div class="cart me-2">
-                            <i class="bi bi-cart3 f-20  text"></i>
-                            <div class="cart-items">
-                                <a href="" class="no-decoration">
-                                    <div class="cart-items--item d-flex align-items-center">
-                                        <img src="assets/images/pdc-1.png" alt="" class="me-2">
-                                        <div>
-                                            <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Eveniet modi distinctio quisquam
-                                                exercitationem soluta accusantium deleniti corporis illo culpa
-                                                laboriosam!</p>
-                                            <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">2 x RM4</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <hr class="text">
-                                <a href="" class="no-decoration">
-                                    <div class="cart-items--item d-flex align-items-center">
-                                        <img src="assets/images/pdc-1.png" alt="" class="me-2">
-                                        <div>
-                                            <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Eveniet modi distinctio quisquam
-                                                exercitationem soluta accusantium deleniti corporis illo culpa
-                                                laboriosam!</p>
-                                            <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">2 x RM4</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <hr class="text">
-                                <p class="f-16 text-grey w-500 text-center">Sub Total : $500</p>
-                                <a href="cart.html" class="no-decoration btn-main w-100 full-btn">MY CART</a>
-                            </div>
-                        </div>
-                        <span class="f-14 w-400 text  white-space-no-wrap">0 Items</span>
-                        <span>&nbsp;/&nbsp;</span>
-                        <span class="f-14 w-400 text  white-space-no-wrap">$0.00</span>
-                    </div>
-                </div>
+      </div>
+      <div class="container-fluid py-2 border-bottom-2">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-6 order-lg-1 order-1">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo-hollywell.png" alt="" class="" />
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 order-lg-2 order-3 mt-lg-0 mt-2">
+            <div class="position-relative">
+              <i class="bi bi-search search-icon"></i>
+              <input
+                type="search"
+                class="search"
+                placeholder="Search in HollyWell"
+              />
             </div>
+          </div>
+          <div class="col-lg-2 col-6 ms-auto order-lg-3 order-2">
+            <div class="d-flex align-items-center justify-content-end">
+              <div class="cart me-2">
+                <i class="bi bi-cart3 f-20 text"></i>
+                <div class="cart-items">
+                  <a href="" class="no-decoration">
+                    <div class="cart-items--item d-flex align-items-center">
+                      <img src="assets/images/pdc-1.png" alt="" class="me-2" />
+                      <div>
+                        <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eveniet modi distinctio quisquam exercitationem
+                          soluta accusantium deleniti corporis illo culpa
+                          laboriosam!
+                        </p>
+                        <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">
+                          2 x RM4
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="text" />
+                  <a href="" class="no-decoration">
+                    <div class="cart-items--item d-flex align-items-center">
+                      <img src="assets/images/pdc-1.png" alt="" class="me-2" />
+                      <div>
+                        <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eveniet modi distinctio quisquam exercitationem
+                          soluta accusantium deleniti corporis illo culpa
+                          laboriosam!
+                        </p>
+                        <p class="mb-0 pb-0 ellipsis-1 f-14 w-500 text">
+                          2 x RM4
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <hr class="text" />
+                  <p class="f-16 text-grey w-500 text-center">
+                    Sub Total : $500
+                  </p>
+                  <a
+                    href="cart.html"
+                    class="no-decoration btn-main w-100 full-btn"
+                    >MY CART</a
+                  >
+                </div>
+              </div>
+              <span class="f-14 w-400 text white-space-no-wrap">0 Items</span>
+              <span>&nbsp;/&nbsp;</span>
+              <span class="f-14 w-400 text white-space-no-wrap">$0.00</span>
+            </div>
+          </div>
         </div>
-        <div class="top-row p-0 menu-links">
-            <div class="container-fluid ">
-                <div class="row">
-                    <!-- <div class="mt-4 d-flex justify-content-center">
+      </div>
+      <div class="top-row p-0 menu-links">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- <div class="mt-4 d-flex justify-content-center">
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/images/logo-hollywell.png" alt="" class="">
                         </a>
                         </div> -->
-                    <ul class="d-flex  mx-auto mb-2 mb-lg-0 menu-list">
-
-                        <li class="nav-item ">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle active-nav" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                Product Catalog
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Accessries</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Clothes</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item">
-                                        Shoes &raquo;
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Black</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">White</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item">Brown &raquo; </a>
-                                            <ul class="dropdown-menu dropdown-submenu">
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Light Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Dark Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Light Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Dark Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Light Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Dark Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Light Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Dark Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Light Brown</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="product-catalog.html">Dark Brown</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Red</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Grey</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Red</a>
-                                        </li>
-                                        <!-- <li>
+            <ul class="d-flex mx-auto mb-2 mb-lg-0 menu-list">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active-nav"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product Catalog
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Accessries</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Clothes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item">
+                      <span
+                        class="d-flex justify-content-between align-content-center"
+                      >
+                        <span> Shoes </span>
+                        <span> &raquo; </span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Black</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >White</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item">
+                          <span
+                            class="d-flex justify-content-between align-content-center"
+                          >
+                            <span> Brown </span>
+                            <span> &raquo; </span>
+                          </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Light Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Dark Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Light Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Dark Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Light Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Dark Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Light Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Dark Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Light Brown</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="product-catalog.html"
+                              >Dark Brown</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Red</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Grey</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Red</a
+                        >
+                      </li>
+                      <!-- <li>
                                                 <a class="dropdown-item" href="product-catalog.html">Grey</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="product-catalog.html">Grey</a>
                                             </li> -->
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Red</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Grey</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Red</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="product-catalog.html">Grey</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Furniture</a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Accessries</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Clothes</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Accessries</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Clothes</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Accessries</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="product-catalog.html">Clothes</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="store.html">Store</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="my-account.html">My Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="faq.html">FAQ</a>
-                        </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Red</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Grey</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Red</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="product-catalog.html"
+                          >Grey</a
+                        >
+                      </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Furniture</a
+                    >
+                  </li>
 
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Accessries</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Clothes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Accessries</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Clothes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Accessries</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="product-catalog.html"
+                      >Clothes</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="my-account.html">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <!-- ===================================hero section -->
-        <section>
-            <div class="top-banner">
-                <div>
-                    <img src="assets/images/product.jpg" alt="">
+      <!-- ===================================hero section -->
+      <section>
+        <div class="top-banner">
+          <div>
+            <img src="assets/images/product.jpg" alt="" />
+          </div>
+          <div class="top-carousel-content2">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div
+                  class="col-lg-6 d-flex flex-column justify-content-center h-100 mx-auto text-center"
+                >
+                  <h2 class="f-64 w-600 text-white">Shoes</h2>
+                  <h3 class="f-22 text-yellow w-500 font-garmond">
+                    <i>Product Catalog</i>
+                  </h3>
                 </div>
-                <div class="top-carousel-content2">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-lg-6 d-flex flex-column justify-content-center h-100 mx-auto text-center">
-                                <h2 class="f-64 w-600 text-white">Shoes</h2>
-                                <h3 class="f-22 text-yellow w-500 font-garmond"><i>Product Catalog</i></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- =======================================Products cards -->
-        <section class="bg-grey ">
-            <div class="py-5">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3 class="f-16 text-orange w-600  text-center font-garmond"><i>Best Collection</i></h3>
-                            <h1 class="f-40 w-600 heading text-center">New Shoes</h1>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================Products cards -->
+      <section class="bg-grey">
+        <div class="pt-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3 class="f-16 text-orange w-600 text-center font-garmond">
+                  <i>Best Collection</i>
+                </h3>
+                <h1 class="f-40 w-600 heading text-center">New Shoes</h1>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="p2-4">
+                  <div class="">
+                    <div class="mall-sort-p ms-auto">
+                      <div
+                        id="sort"
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        Sort by<i class="bi bi-chevron-down f-12"></i>
+                      </div>
+                      <div
+                        class="mall-group sort-by-mall-group border-12 box-shadow-std overflow-hide mall-sort-child z-index-5"
+                      >
+                        <div data-sort-mall="nameasc" class="mall-sort">
+                          Name: A-Z
                         </div>
-
-                        <div class="col-lg-12">
-                            <div class="p2-4">
-                                <div class="">
-                                    <div class="mall-sort-p ms-auto">
-                                        <div id="sort" class="d-flex justify-content-between align-items-center">Sort
-                                            by<i class="bi bi-chevron-down f-12"></i></div>
-                                        <div
-                                            class="mall-group sort-by-mall-group border-12 box-shadow-std overflow-hide mall-sort-child z-index-5">
-                                            <div data-sort-mall="nameasc" class="mall-sort">Name: A-Z</div>
-                                            <div data-sort-mall="namedesc" class="mall-sort">Name: Z-A</div>
-                                            <div data-sort-mall="pricelow" class="mall-sort">Price: Low-High
-                                            </div>
-                                            <div data-sort-mall="pricehigh" class="mall-sort">Price: High-Low</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ==============================pagination containers -->
-                                <div id="pagination-container"></div>
-                                <div id="product-cards-container"></div>
-
-                                <!-- ========================================cards grid -->
-                                <div class="grid-mall ">
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        A. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>499.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="gutter-sizer"></div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        B. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">300.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        C. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">400.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        D. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">500.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">600.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        F. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">700.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="mt-4 mall-product daily  ">
-                                        <a href="single-product.html" class="no-decoration">
-                                            <div class="products-card">
-                                                <div class="product-card-img">
-                                                    <div class="carousel__slide">
-                                                        <figure>
-                                                            <div>
-                                                                <img src="assets/images/t-pro1.webp" alt="" class="">
-                                                            </div>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-
-                                                <div class="product-card-text">
-                                                    <p
-                                                        class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2">
-                                                        E. Brown Shoes</p>
-
-                                                    <div class="d-flex mb-lg-3 mb-2">
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 me-1 text-yellow"></i>
-                                                        <i class="bi bi-star-fill f-16 text-yellow"></i>
-                                                    </div>
-
-                                                    <p class="product-dec w-500  ellipsis-2 text-grey mb-lg-3 mb-2">
-                                                        Lorem
-                                                        ipsum
-                                                        dolor sit amet
-                                                        consectetur
-                                                        adipisicing.</p>
-                                                    <span class="d-flex align-items-center">
-                                                        <del class="text-black">
-                                                            <span class="cross-amount"><bdi><span
-                                                                        class="">$</span>599.00</bdi></span>
-                                                        </del>
-                                                        <span class="new-amount ms-1 d-flex">
-                                                            <span class="">$</span><span class="price">100.00</span>
-                                                        </span>
-                                                    </span>
-                                                    <div class="my-lg-3 my-2">
-                                                        <div class="d-flex align-items-center ">
-                                                            <p class="mb-0 pb-0  text weight">0.59kg</p>
-                                                            <p class="mb-0 pb-0  in-stock ms-3">In Stock</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-flex justify-content-between align-items-center flex-wrap mt-4">
-                                                        <div class="mb-md-0 mb-3">
-                                                            <img src="assets/images/free-shipping-icon.svg" alt=""
-                                                                class="img-fluid"
-                                                                style="height: 30px !important; width: auto;">
-                                                        </div>
-                                                        <div class="">
-                                                            <button class="btn-main no-decoration w-400">Add to
-                                                                Cart</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="d-flex justify-content-center mt-5 pt-4">
-                                    <nav aria-label="...">
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <span class="page-link">&laquo;</span>
-                                            </li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item " aria-current="page">
-                                                <span class="page-link">2</span>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">&raquo;</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-
-                                </div>
-                            </div>
+                        <div data-sort-mall="namedesc" class="mall-sort">
+                          Name: Z-A
                         </div>
-
-
+                        <div data-sort-mall="pricelow" class="mall-sort">
+                          Price: Low-High
+                        </div>
+                        <div data-sort-mall="pricehigh" class="mall-sort">
+                          Price: High-Low
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                  </div>
+                  <!-- ==============================pagination containers -->
+                  <div id="pagination-container"></div>
+                  <div id="product-cards-container"></div>
 
+                  <!-- ========================================cards grid -->
+                  <div class="grid-mall">
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              A. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>499.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="gutter-sizer"></div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              B. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">300.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              C. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">400.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              D. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">500.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">600.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              F. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">700.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="mt-4 mall-product daily">
+                      <a href="single-product.html" class="no-decoration">
+                        <div class="products-card">
+                          <div class="product-card-img">
+                            <div class="carousel__slide">
+                              <figure>
+                                <div>
+                                  <img
+                                    src="assets/images/t-pro1.webp"
+                                    alt=""
+                                    class=""
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+
+                          <div class="product-card-text">
+                            <p
+                              class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+                            >
+                              E. Brown Shoes
+                            </p>
+
+                            <div class="d-flex mb-lg-3 mb-2">
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i
+                                class="bi bi-star-fill f-16 me-1 text-yellow"
+                              ></i>
+                              <i class="bi bi-star-fill f-16 text-yellow"></i>
+                            </div>
+
+                            <p
+                              class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+                            >
+                              Lorem ipsum dolor sit amet consectetur
+                              adipisicing.
+                            </p>
+                            <span class="d-flex align-items-center">
+                              <del class="text-black">
+                                <span class="cross-amount"
+                                  ><bdi
+                                    ><span class="">$</span>599.00</bdi
+                                  ></span
+                                >
+                              </del>
+                              <span class="new-amount ms-1 d-flex">
+                                <span class="">$</span
+                                ><span class="price">100.00</span>
+                              </span>
+                            </span>
+                            <div class="my-lg-3 my-2">
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0 pb-0 text weight">0.59kg</p>
+                                <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+                            >
+                              <div class="mb-md-0 mb-3">
+                                <img
+                                  src="assets/images/free-shipping-icon.svg"
+                                  alt=""
+                                  class="img-fluid"
+                                  style="height: 30px !important; width: auto"
+                                />
+                              </div>
+                              <div class="">
+                                <button class="btn-main no-decoration w-400">
+                                  Add to Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- ==========================================Load More -->
+                  <div class="d-flex justify-content-center mt-5 pt-4">
+                    <button class="no-decoration cart-btn">Load More</button>
+                  </div>
+                  <!-- ============================================Pagination -->
+                  <!-- <div class="d-flex justify-content-center mt-5 pt-4">
+                    <nav aria-label="...">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <span class="page-link">&laquo;</span>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item" aria-current="page">
+                          <span class="page-link">2</span>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">6</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">&raquo;</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class=" footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3  mb-lg-0 mb-4 d-flex justify-content-center flex-column align-items-center">
-                    <h1 class="f-24 w-600 footer-logo-text font-garmond text-yellow">HOLLY WELL</h1>
-                    <a href="index.html" class="no-decoration"><img src="assets/images/logo.png" alt=""
-                            class="img-fluid footer-logo mx-auto" style="height: 150px;"></a>
-                </div>
-                <div class="col-lg-3  mb-lg-0 mb-4">
-                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Categories</h1>
-                    <div class="mt-3  text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover ">
-                            Shoes
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Cosmatics
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Colothes
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Accessries
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration">
-                            Furniture
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3  mb-lg-0 mb-4">
-                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Links</h1>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Customer Support
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            My Account
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            FAQ
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Privacy Policy
-                        </a>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <a href="" class="f-16 w-400 text-white no-decoration hover">
-                            Terms & Conditions
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3  mb-lg-0 mb-4">
-                    <h1 class="f-24 w-600 text-white text-lg-start text-center">Locations</h1>
-                    <div class="mt-3">
-                        <p class="f-16 w-400 text-white no-decoration mb-0 pb-0 text-lg-start text-center">
-                            Jln. Cempaka Wangi No 22, Jakarta - Indonesia
-                        </p>
-                    </div>
-                    <div class="mt-3 text-lg-start text-center">
-                        <div
-                            class="d-flex align-items-center justify-content-lg-start justify-content-center me-3 f-14">
-                            <a href="" class="no-decoration text-white">
-                                <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i>info@gmail.com
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="mt-3 ">
-                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center f-14">
-                            <a href="" class="no-decoration text-white">
-                                <i class="bi bi-telephone me-2 f-14 text-yellow "></i>+60 333 87 566
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
-                            <div class="social me-2">
-                                <a href="" class=""><i class="bi bi-facebook"></i></a>
-                            </div>
-                            <div class="social me-2">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                            </div>
-                            <div class="social me-2">
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-12 mb-2">
-                    <hr class="text-white ">
-                </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-3 mb-lg-0 mb-4 d-flex justify-content-center flex-column align-items-center"
+          >
+            <h1 class="f-24 w-600 footer-logo-text font-garmond text-yellow">
+              HOLLY WELL
+            </h1>
+            <a href="index.html" class="no-decoration"
+              ><img
+                src="assets/images/logo.png"
+                alt=""
+                class="img-fluid footer-logo mx-auto"
+                style="height: 150px"
+            /></a>
+          </div>
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <h1 class="f-24 w-600 text-white text-lg-start text-center">
+              Categories
+            </h1>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Shoes
+              </a>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2">
-                    <p class="f-14 text-white w-400 mb-0 pb-0 text-lg-start text-center mt-lg-0 mt-4">Copyright © 2023
-                        HOLLY WELL.</p>
-                </div>
-                <div class="col-lg-6 order-lg-2 order-1 d-flex justify-content-lg-end justify-content-center">
-                    <img src="assets/images/payment.png" alt="" class="img-fluid">
-                </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Cosmatics
+              </a>
             </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Colothes
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Accessries
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration">
+                Furniture
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <h1 class="f-24 w-600 text-white text-lg-start text-center">
+              Links
+            </h1>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Customer Support
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                My Account
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                FAQ
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Privacy Policy
+              </a>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <a href="" class="f-16 w-400 text-white no-decoration hover">
+                Terms & Conditions
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <h1 class="f-24 w-600 text-white text-lg-start text-center">
+              Locations
+            </h1>
+            <div class="mt-3">
+              <p
+                class="f-16 w-400 text-white no-decoration mb-0 pb-0 text-lg-start text-center"
+              >
+                Jln. Cempaka Wangi No 22, Jakarta - Indonesia
+              </p>
+            </div>
+            <div class="mt-3 text-lg-start text-center">
+              <div
+                class="d-flex align-items-center justify-content-lg-start justify-content-center me-3 f-14"
+              >
+                <a href="" class="no-decoration text-white">
+                  <i class="bi bi-envelope me-2 f-16 mt-1 text-yellow"></i
+                  >info@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div
+                class="d-flex align-items-center justify-content-lg-start justify-content-center f-14"
+              >
+                <a href="" class="no-decoration text-white">
+                  <i class="bi bi-telephone me-2 f-14 text-yellow"></i>+60 333
+                  87 566
+                </a>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div
+                class="d-flex align-items-center justify-content-lg-start justify-content-center"
+              >
+                <div class="social me-2">
+                  <a href="" class=""><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="social me-2">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                </div>
+                <div class="social me-2">
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mb-2">
+            <hr class="text-white" />
+          </div>
         </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1 order-2">
+            <p
+              class="f-14 text-white w-400 mb-0 pb-0 text-lg-start text-center mt-lg-0 mt-4"
+            >
+              Copyright © 2023 HOLLY WELL.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 order-lg-2 order-1 d-flex justify-content-lg-end justify-content-center"
+          >
+            <img src="assets/images/payment.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
     </footer>
 
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/isotope/packery-mode.pkgd.min.js"></script>
@@ -1278,8 +1722,5 @@
     <script src="assets/js/sorting.js"></script>
     <!-- Pagination JS -->
     <script src="assets/js/pagination.js"></script>
-
-
-</body>
-
+  </body>
 </html>
