@@ -2165,4 +2165,5 @@ input[type='radio'] {
 .disabled-page{
   background-color: var(--grey);
   pointer-events: none;
+  
 }
