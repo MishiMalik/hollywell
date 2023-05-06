@@ -54,7 +54,19 @@ $(document).ready(function () {
     // bind sort button click
     $('.sort-by-mall-group').on('click', 'div', function () {
         var sortValue = $(this).attr('data-sort-mall');
+        $("#sort").html($(this).text() + `<i class="bi bi-chevron-down f-12"></i>`)
         $grid.isotope({ sortBy: sortValue });
+        goToPage(1)
+        $(".pager").removeClass("active-page")
+        $(`.pager[data-page='1']`).addClass("active-page")
+        $(".prevPage").addClass("disabled-page")
+        $(".nextPage").removeClass("disabled-page")
+
+        // $(".prevPage").click(function() {
+        //     $(".nextPage").removeClass("disabled-page")
+        //     $(".pager").removeClass("active-page")
+        //     goToPage(currentPage - 1)
+        // })
     });
     // bind filter button click
     $('.filter-by-mall-group').on('click', 'div.mall-filter', function () {
