@@ -1,6 +1,8 @@
 // ========================================================================AOS
 AOS.init();
 
+
+
 // ========================================================================navbar close on scroll and click
 $('.open-icon').on('click',function(){
     $('.close-icon').css('display','block');
@@ -14,6 +16,99 @@ $('.close-icon').on('click',function(){
     $('.menu-links').css('left','-300px');
     $('body').css('overflow-y','auto');
 });
+
+// =========================================================Load More
+
+// $(".load-more-btn").click(function(){
+//   $(".grid-mall").append(`<div class="mt-4 mall-product daily">
+//   <a href="single-product.html" class="no-decoration">
+//     <div class="products-card">
+//       <div class="product-card-img">
+//         <div class="carousel__slide">
+//           <figure>
+//             <div>
+//               <img
+//                 src="assets/images/t-pro10.webp"
+//                 alt=""
+//                 class=""
+//               />
+//             </div>
+//           </figure>
+//         </div>
+//       </div>
+
+//       <div class="product-card-text">
+//         <p
+//           class="product-heading heading ellipsis-1 name mb-0 pb-0 mb-lg-3 mb-2"
+//         >
+//           A. Brown Shoes
+//         </p>
+
+//         <div class="d-flex mb-lg-3 mb-2">
+//           <i
+//             class="bi bi-star-fill f-16 me-1 text-yellow"
+//           ></i>
+//           <i
+//             class="bi bi-star-fill f-16 me-1 text-yellow"
+//           ></i>
+//           <i
+//             class="bi bi-star-fill f-16 me-1 text-yellow"
+//           ></i>
+//           <i
+//             class="bi bi-star-fill f-16 me-1 text-yellow"
+//           ></i>
+//           <i class="bi bi-star-fill f-16 text-yellow"></i>
+//         </div>
+
+//         <p
+//           class="product-dec w-500 ellipsis-2 text-grey mb-lg-3 mb-2"
+//         >
+//           Lorem ipsum dolor sit amet consectetur
+//           adipisicing.
+//         </p>
+//         <span class="d-flex align-items-center">
+//           <del class="text-black">
+//             <span class="cross-amount"
+//               ><bdi
+//                 ><span class="">$</span>499.00</bdi
+//               ></span
+//             >
+//           </del>
+//           <span class="new-amount ms-1 d-flex">
+//             <span class="">$</span
+//             ><span class="price">100.00</span>
+//           </span>
+//         </span>
+//         <div class="my-lg-3 my-2">
+//           <div class="d-flex align-items-center">
+//             <p class="mb-0 pb-0 text weight">0.59kg</p>
+//             <p class="mb-0 pb-0 in-stock ms-3">In Stock</p>
+//           </div>
+//         </div>
+//         <div
+//           class="d-flex justify-content-between align-items-center flex-wrap mt-4"
+//         >
+//           <div class="mb-md-0 mb-3">
+//             <img
+//               src="assets/images/free-shipping-icon.svg"
+//               alt=""
+//               class="img-fluid"
+//               style="height: 30px !important; width: auto"
+//             />
+//           </div>
+//           <div class="">
+//             <button class="btn-main no-decoration w-400">
+//               Add to Cart
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </a>
+// </div>`);
+// });
+
+
 // $(function () {
 //     $(document).click(function (event) {
 //         var navbar = $(".collapse");
