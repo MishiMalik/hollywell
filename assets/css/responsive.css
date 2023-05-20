@@ -94,6 +94,16 @@
   .carousel-item img {
     height: 300px;
   }
+
+
+  .carousel-inner-2 {
+    min-height: 450px;
+
+  }
+
+  .carousel-item-2 img {
+    min-height: 450px;
+  }
   .account-side-bar{
     background-color: #ffffff !important;
     box-shadow: 0 0 5px #ccc;
