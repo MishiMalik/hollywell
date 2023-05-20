@@ -282,9 +282,9 @@ main {
     font-weight: 500;
     text-decoration: none;
   } */
-.dropdown-menu li {
-  /* position: relative; */
-}
+/* .dropdown-menu li {
+  position: relative;
+} */
 
 .dropdown-menu .dropdown-submenu {
   display: none;
